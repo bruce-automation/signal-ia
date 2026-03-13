@@ -1,5 +1,5 @@
 export const categoryMeta = {
-  comparatifs: {
+  comparisons: {
     title: 'AI Comparisons',
     description:
       'Compare leading AI tools and models without recycling vendor marketing.',
@@ -27,7 +27,7 @@ export const categoryMeta = {
     intro:
       'The business layer of AI: value, execution, guardrails, and credibility.',
   },
-  outils: {
+  tools: {
     title: 'AI Tools',
     description:
       'Selection and analysis of AI tools that genuinely help teams produce, compare, and work faster.',
@@ -70,7 +70,7 @@ export interface PillarPage {
 
 export const pillarPages: PillarPage[] = [
   {
-    slug: 'bien-utiliser-ia-au-travail',
+    slug: 'how-to-use-ai-well-at-work',
     title: 'How to Use AI Well at Work',
     description:
       'The Signal IA hub for using AI at work without creating more noise: methods, tools, and non-negotiable guardrails.',
@@ -82,7 +82,7 @@ export const pillarPages: PillarPage[] = [
       'The goal is not to ask AI to do more things. The goal is to remove friction from real work: prepare faster, sort information, clarify messy inputs, compare options, document decisions, and tighten reviews.',
       'In practice, the biggest gains rarely come from “magic prompts”. They come from a stable operating system: a clear job, a clear output format, and a clear validation step.',
     ],
-    categories: ['guides', 'outils', 'agents'],
+    categories: ['guides', 'tools', 'agents'],
     featuredArticleIds: [
       '05-comment-utiliser-lia-au-travail-sans-perdre-du-temps',
       '04-meilleurs-outils-ia-pour-creer-du-contenu',
@@ -176,7 +176,7 @@ export const pillarPages: PillarPage[] = [
     ],
   },
   {
-    slug: 'choisir-les-bons-outils-ia',
+    slug: 'how-to-choose-the-right-ai-tools',
     title: 'How to Choose the Right AI Tools',
     description:
       'The Signal IA hub for comparing models and AI tools before you pay for storytelling instead of leverage.',
@@ -188,7 +188,7 @@ export const pillarPages: PillarPage[] = [
       'The bad reflex is to choose by hype, demo effect, or branding. The useful reflex is to begin with a real job: write, research, summarise, automate, compare, or produce cleaner output faster.',
       'A good AI tool should not be judged only by raw output quality. It should be judged by its role inside your system: quality, speed, friction, governance, cost, and stability.',
     ],
-    categories: ['comparatifs', 'outils', 'guides'],
+    categories: ['comparisons', 'tools', 'guides'],
     featuredArticleIds: [
       '01-chatgpt-vs-claude-vs-gemini-2026',
       '04-meilleurs-outils-ia-pour-creer-du-contenu',
@@ -282,7 +282,7 @@ export const pillarPages: PillarPage[] = [
     ],
   },
   {
-    slug: 'business-ia-credible',
+    slug: 'how-to-build-a-credible-ai-business',
     title: 'How to Build a Credible AI Business',
     description:
       'The Signal IA hub for avoiding AI theatre and building an offer that is useful, credible, and verifiable.',

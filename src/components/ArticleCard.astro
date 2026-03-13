@@ -12,11 +12,11 @@ const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
 const baseUrl = basePath ? `/${basePath}/` : '/';
 const articleUrl = getArticleUrl(article, baseUrl);
 const categoryLabels = {
-  comparatifs: 'AI Comparisons',
+  comparisons: 'AI Comparisons',
   guides: 'AI Guides',
   agents: 'AI Agents',
   business: 'AI Business',
-  outils: 'AI Tools',
+  tools: 'AI Tools',
 } as const;
 ---
 

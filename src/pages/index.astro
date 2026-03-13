@@ -13,7 +13,7 @@ const articles = (await getCollection('articles')).sort(
 
 const featured = articles.filter((article) => article.data.featured).slice(0, 3);
 const guides = articles.filter((article) => article.data.category === 'guides').slice(0, 3);
-const comparisons = articles.filter((article) => article.data.category === 'comparatifs').slice(0, 3);
+const comparisons = articles.filter((article) => article.data.category === 'comparisons').slice(0, 3);
 const baseSiteUrl = new URL(baseUrl, Astro.site).toString();
 const socialImageUrl = new URL(socialImage.replace(/^\//, ''), new URL(baseUrl, Astro.site)).toString();
 const structuredData = {
@@ -43,7 +43,7 @@ const structuredData = {
     </p>
     <div class="cta-row">
       <a class="button primary" href={`${baseUrl}articles/`}>Browse latest analysis</a>
-      <a class="button" href={`${baseUrl}categories/comparatifs/`}>Read comparisons</a>
+      <a class="button" href={`${baseUrl}categories/comparisons/`}>Read comparisons</a>
       <a class="button" href={`${baseUrl}categories/guides/`}>Explore guides</a>
     </div>
     <div class="tag-row">

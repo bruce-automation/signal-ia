@@ -18,10 +18,10 @@ export const GET: APIRoute = () => {
     <circle cx="208" cy="516" r="170" fill="#6EE7C8" fill-opacity="0.08"/>
     <rect x="90" y="80" width="1020" height="470" rx="28" fill="#111832" stroke="rgba(255,255,255,0.08)"/>
     <text x="140" y="190" fill="#8AB4FF" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="700">Signal IA</text>
-    <text x="140" y="290" fill="#EDF2FF" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="800">Le média francophone</text>
-    <text x="140" y="370" fill="#EDF2FF" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="800">qui filtre le bruit</text>
-    <text x="140" y="450" fill="#EDF2FF" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="800">de l’IA.</text>
-    <text x="140" y="510" fill="#A6B2D9" font-size="30" font-family="Inter, Arial, sans-serif">Comparatifs, guides, agents, outils, business.</text>
+    <text x="140" y="290" fill="#EDF2FF" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="800">The AI publication</text>
+    <text x="140" y="370" fill="#EDF2FF" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="800">that filters the noise</text>
+    <text x="140" y="450" fill="#EDF2FF" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="800">for what matters.</text>
+    <text x="140" y="510" fill="#A6B2D9" font-size="30" font-family="Inter, Arial, sans-serif">Comparisons, guides, agents, tools, business.</text>
     <rect x="140" y="112" width="82" height="6" rx="3" fill="url(#accent)"/>
   </svg>`;
 

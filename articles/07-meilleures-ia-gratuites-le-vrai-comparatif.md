@@ -6,7 +6,7 @@ slug: "best-free-ai-tools"
 locale: en
 redirectFrom:
   - "07-meilleures-ia-gratuites-le-vrai-comparatif"
-category: comparatifs
+category: comparisons
 featured: true
 hero: false
 ---
@@ -109,6 +109,6 @@ Yes for light, occasional, or exploratory tasks. Not reliably for serious long-t
 Not at the start. But once AI becomes central to your work, paying is usually cheaper than fighting the limits of free plans.
 
 ## Related reading
-- `/signal-ia/articles/chatgpt-vs-claude-vs-gemini-2026/`
-- `/signal-ia/articles/best-ai-tools-for-content-creation/`
-- `/signal-ia/articles/how-to-use-ai-at-work-without-wasting-time/`
+- `../chatgpt-vs-claude-vs-gemini-2026/`
+- `../best-ai-tools-for-content-creation/`
+- `../how-to-use-ai-at-work-without-wasting-time/`

@@ -6,7 +6,7 @@ slug: "chatgpt-vs-claude-vs-gemini-2026"
 locale: en
 redirectFrom:
   - "01-chatgpt-vs-claude-vs-gemini-2026"
-category: comparatifs
+category: comparisons
 featured: true
 hero: true
 ---
@@ -113,6 +113,6 @@ Yes, especially for people and teams already living in Google Workspace.
 Usually ChatGPT for breadth, or Claude if writing quality is the priority.
 
 ## Related reading
-- `/signal-ia/articles/best-free-ai-tools/`
-- `/signal-ia/articles/best-ai-tools-for-content-creation/`
-- `/signal-ia/articles/how-to-use-ai-at-work-without-wasting-time/`
+- `../best-free-ai-tools/`
+- `../best-ai-tools-for-content-creation/`
+- `../how-to-use-ai-at-work-without-wasting-time/`

@@ -17,16 +17,24 @@ export async function getStaticPaths() {
 
 const { page } = Astro.props as { page: PillarPage };
 const allArticles = await getCollection('articles');
+const featuredIdSet = new Set(page.featuredArticleIds);
+const matchesFeaturedId = (article: CollectionEntry<'articles'>) => {
+  const normalizedId = article.id.replace(/\.md$/, '');
+  return (
+    featuredIdSet.has(article.id) ||
+    featuredIdSet.has(normalizedId) ||
+    featuredIdSet.has(article.data.slug) ||
+    (article.data.redirectFrom ?? []).some((legacySlug) => featuredIdSet.has(legacySlug))
+  );
+};
 
-const featuredArticles = page.featuredArticleIds
-  .map((id) => allArticles.find((article) => article.id === id))
-  .filter(Boolean) as CollectionEntry<'articles'>[];
+const featuredArticles = allArticles.filter(matchesFeaturedId);
 
 const relatedArticles = allArticles
   .filter(
     (article) =>
       page.categories.includes(article.data.category) &&
-      !page.featuredArticleIds.includes(article.id),
+      !matchesFeaturedId(article),
   )
   .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 

@@ -6,7 +6,7 @@ slug: "best-ai-tools-for-content-creation"
 locale: en
 redirectFrom:
   - "04-meilleurs-outils-ia-pour-creer-du-contenu"
-category: outils
+category: tools
 featured: false
 hero: false
 ---
@@ -117,6 +117,6 @@ Not cleanly. It can accelerate parts of the workflow, but final quality still de
 Only if it genuinely reduces friction. In many cases, a smaller stack works better.
 
 ## Related reading
-- `/signal-ia/articles/best-free-ai-tools/`
-- `/signal-ia/articles/how-to-use-ai-at-work-without-wasting-time/`
-- `/signal-ia/articles/chatgpt-vs-claude-vs-gemini-2026/`
+- `../best-free-ai-tools/`
+- `../how-to-use-ai-at-work-without-wasting-time/`
+- `../chatgpt-vs-claude-vs-gemini-2026/`

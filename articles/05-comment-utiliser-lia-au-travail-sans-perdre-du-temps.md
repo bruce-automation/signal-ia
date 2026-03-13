@@ -118,6 +118,6 @@ Because people use it without a clear frame, on the wrong tasks, or without usef
 No. Automate the recurring work that is easy to verify. Leave the rest under tighter human control.
 
 ## Related reading
-- `/signal-ia/articles/what-is-an-ai-agent/`
-- `/signal-ia/articles/best-ai-tools-for-content-creation/`
-- `/signal-ia/articles/best-ai-agent-tools-in-2026/`
+- `../what-is-an-ai-agent/`
+- `../best-ai-tools-for-content-creation/`
+- `../best-ai-agent-tools-in-2026/`

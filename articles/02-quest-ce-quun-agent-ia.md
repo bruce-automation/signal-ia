@@ -121,6 +121,6 @@ Sometimes, but useful autonomy is always limited by rules, permissions, and revi
 Not cleanly. They mostly replace friction, preparation, triage, and part of repetitive knowledge work.
 
 ## Related reading
-- `/signal-ia/articles/best-ai-agent-tools-in-2026/`
-- `/signal-ia/articles/how-to-use-ai-at-work-without-wasting-time/`
-- `/signal-ia/articles/chatgpt-vs-claude-vs-gemini-2026/`
+- `../best-ai-agent-tools-in-2026/`
+- `../how-to-use-ai-at-work-without-wasting-time/`
+- `../chatgpt-vs-claude-vs-gemini-2026/`

@@ -8,14 +8,14 @@ export function getArticleUrl(article: CollectionEntry<'articles'>, baseUrl = '/
   return `${baseUrl}articles/${getArticleSlug(article)}/`;
 }
 
-export function getArticleLanguage(article: CollectionEntry<'articles'>) {
-  return article.data.locale === 'en' ? 'en' : 'fr';
+export function getArticleLanguage(_article: CollectionEntry<'articles'>) {
+  return 'en';
 }
 
-export function getArticleOgLocale(article: CollectionEntry<'articles'>) {
-  return article.data.locale === 'en' ? 'en_US' : 'fr_FR';
+export function getArticleOgLocale(_article: CollectionEntry<'articles'>) {
+  return 'en_US';
 }
 
-export function getArticleSchemaLanguage(article: CollectionEntry<'articles'>) {
-  return article.data.locale === 'en' ? 'en-US' : 'fr-FR';
+export function getArticleSchemaLanguage(_article: CollectionEntry<'articles'>) {
+  return 'en-US';
 }

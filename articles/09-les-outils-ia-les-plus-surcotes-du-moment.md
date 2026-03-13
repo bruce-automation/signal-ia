@@ -6,7 +6,7 @@ slug: "the-most-overrated-ai-tools-right-now"
 locale: en
 redirectFrom:
   - "09-les-outils-ia-les-plus-surcotes-du-moment"
-category: outils
+category: tools
 featured: true
 hero: false
 ---
@@ -135,6 +135,6 @@ It should improve a real workflow with a visible gain, not just generate a seduc
 No. Just separate tools that are popular because they are useful from tools that are popular because they tell a better story.
 
 ## Related reading
-- `/signal-ia/articles/why-90-percent-of-ai-projects-are-theatre/`
-- `/signal-ia/articles/best-ai-tools-for-content-creation/`
-- `/signal-ia/articles/best-ai-agent-tools-in-2026/`
+- `../why-90-percent-of-ai-projects-are-theatre/`
+- `../best-ai-tools-for-content-creation/`
+- `../best-ai-agent-tools-in-2026/`

@@ -133,6 +133,6 @@ Yes, when the task is clear, the tools are good, and verification exists. No, wh
 Not always. But the more control you want, the more technical literacy helps.
 
 ## Related reading
-- `/signal-ia/articles/what-is-an-ai-agent/`
-- `/signal-ia/articles/how-to-use-ai-at-work-without-wasting-time/`
-- `/signal-ia/articles/chatgpt-vs-claude-vs-gemini-2026/`
+- `../what-is-an-ai-agent/`
+- `../how-to-use-ai-at-work-without-wasting-time/`
+- `../chatgpt-vs-claude-vs-gemini-2026/`

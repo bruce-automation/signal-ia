@@ -96,6 +96,6 @@ It should have bounded scope, observable proof, measurable gain, and an explicit
 No. Start with something small, useful, and testable, then expand only if the results hold.
 
 ## Related reading
-- `/signal-ia/dossiers/business-ia-credible/`
-- `/signal-ia/articles/how-to-build-an-ai-business-without-selling-hype/`
-- `/signal-ia/articles/what-is-an-ai-agent/`
+- `../dossiers/how-to-build-a-credible-ai-business/`
+- `../how-to-build-an-ai-business-without-selling-hype/`
+- `../what-is-an-ai-agent/`
