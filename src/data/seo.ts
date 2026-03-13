@@ -71,16 +71,16 @@ export interface PillarPage {
 export const pillarPages: PillarPage[] = [
   {
     slug: 'bien-utiliser-ia-au-travail',
-    title: 'Bien utiliser l’IA au travail',
+    title: 'How to Use AI Well at Work',
     description:
-      'Le hub Signal IA pour cadrer les bons usages de l’IA au travail : méthode, outils et garde-fous.',
+      'The Signal IA hub for using AI at work without creating more noise: methods, tools, and non-negotiable guardrails.',
     eyebrow: 'Pillar page',
     intro:
-      'Si tu veux intégrer l’IA dans le travail quotidien sans tomber dans le gadget, commence ici.',
+      'If you want AI to remove friction from daily work instead of adding one more shiny layer, start here.',
     body: [
-      'Cette page rassemble les contenus Signal IA les plus utiles pour utiliser l’IA avec méthode : choisir les bons cas d’usage, éviter les pertes de temps et garder du jugement humain.',
-      'Le but n’est pas de demander plus de choses à l’IA. Le but est de supprimer de la friction dans le travail réel : préparer, trier, clarifier, comparer, documenter et relire plus vite.',
-      'En pratique, les meilleurs gains viennent rarement des prompts “magiques”. Ils viennent d’un petit système stable : un usage clair, un format de sortie clair, un moment de vérification clair.',
+      'This pillar gathers the most useful Signal IA pieces for using AI with method: choose the right use cases, avoid time-wasting workflows, and keep human judgment where it matters.',
+      'The goal is not to ask AI to do more things. The goal is to remove friction from real work: prepare faster, sort information, clarify messy inputs, compare options, document decisions, and tighten reviews.',
+      'In practice, the biggest gains rarely come from “magic prompts”. They come from a stable operating system: a clear job, a clear output format, and a clear validation step.',
     ],
     categories: ['guides', 'outils', 'agents'],
     featuredArticleIds: [
@@ -89,104 +89,104 @@ export const pillarPages: PillarPage[] = [
       '02-quest-ce-quun-agent-ia',
     ],
     quickWins: [
-      'Commence par une tâche pénible et répétitive : résumé, synthèse, nettoyage de notes, préparation de briefings.',
-      'Impose toujours un format de sortie : tableau comparatif, plan en 5 points, checklist, draft court.',
-      'Sépare les usages “brouillon” des usages “publication” pour éviter de confondre vitesse et qualité.',
-      'Relis systématiquement ce qui touche à l’argent, la réputation, les clients ou une décision sensible.',
+      'Start with a painful repetitive task: summaries, note cleanup, briefing prep, or structured comparison.',
+      'Always demand an output format: comparison table, five-point plan, checklist, short draft.',
+      'Separate “rough work” use cases from “publishable output” use cases so speed does not impersonate quality.',
+      'Review anything that touches money, clients, public communication, reputation, or a sensitive decision.',
     ],
     sections: [
       {
-        title: '1. Où l’IA fait vraiment gagner du temps au travail',
+        title: '1. Where AI actually saves time at work',
         body: [
-          'Les meilleurs cas d’usage ne sont pas les plus spectaculaires. Ce sont les tâches qui te prennent du temps sans demander ton meilleur jugement : résumer un document long, préparer un cadrage, transformer des notes brutes en version lisible, comparer trois options, classer une matière dispersée.',
-          'C’est pour ça que les usages les plus rentables sont souvent en amont du travail visible. L’IA sert bien à préparer, pas à signer à ta place. Quand elle enlève 20 minutes de friction avant chaque livrable, le gain cumulé devient massif.',
-          'À l’inverse, si tu l’utilises sur une tâche encore floue ou très politique, tu risques surtout d’ajouter un intermédiaire de plus entre toi et le vrai problème.',
+          'The highest-value use cases are rarely the most spectacular ones. They are the jobs that consume time without requiring your best judgment: summarising a long document, turning rough notes into something readable, comparing three options, drafting a first structure, classifying scattered information, or preparing a clean brief.',
+          'That is why the most profitable AI workflows often sit upstream of visible output. AI is good at preparation. It is not good at taking responsibility for your final call. If it removes 20 minutes of friction before every deliverable, the compound gain becomes serious.',
+          'The opposite is also true: if you point AI at a task that is still politically fuzzy, emotionally loaded, or strategically unclear, you usually add another layer between you and the actual problem.',
         ],
       },
       {
-        title: '2. Le cadre minimal pour éviter le gaspillage',
+        title: '2. The minimal operating frame that prevents waste',
         body: [
-          'Un usage propre de l’IA au travail tient sur quatre briques : un objectif net, un contexte utile, un format de sortie, un critère de validation. Sans ça, tu obtiens des réponses parfois jolies, mais rarement opératoires.',
-          'Exemple simple : au lieu de demander “aide-moi sur ce dossier”, demande “résume ce document en 8 points, sépare faits / hypothèses / risques, puis propose 3 actions”. Là, tu transformes un outil vague en accélérateur de travail.',
-          'Ce cadre évite aussi le piège des itérations infinies. Si tu sais à quoi doit ressembler une bonne sortie, tu vois plus vite si l’outil aide ou si tu es juste en train de piloter du bruit.',
+          'A clean AI workflow at work usually needs only four parts: a clear objective, useful context, a defined output format, and a validation rule. Without that frame, you may get answers that look polished but are not operational.',
+          'Instead of asking “help me with this”, ask for something like: “Summarise this document in eight bullets, separate facts from assumptions and risks, then propose three next actions.” That turns a vague assistant into a concrete acceleration layer.',
+          'This frame also stops infinite prompt fiddling. When you know what a good output looks like, you can quickly judge whether the tool is helping or whether you are just steering noise more efficiently.',
         ],
       },
       {
-        title: '3. Quels outils choisir selon le métier réel',
+        title: '3. How to choose tools for actual work',
         body: [
-          'Il n’existe pas une “meilleure IA pour le travail”. Il existe un meilleur assemblage selon le job : un modèle généraliste pour raisonner et rédiger, un outil spécialisé pour la recherche, éventuellement un agent cadré pour faire des tâches internes multi-étapes.',
-          'Si tu écris, synthétises ou analyses beaucoup, privilégie la qualité du raisonnement, de la structure et de la reformulation. Si tu gères des opérations internes, regarde surtout les garde-fous, l’accès aux sources et la traçabilité.',
-          'La bonne stack est souvent petite : un outil principal, un usage secondaire, et une routine de vérification. Dès que tu accumules des couches sans savoir laquelle retire une vraie friction, tu dégrades ton système.',
+          'There is no single best AI tool for work. There is only a better stack for a given job: one general model for thinking and drafting, maybe one specialised tool for research or transcription, and sometimes a tightly-scoped agent for internal multi-step tasks.',
+          'If your work is writing-heavy, analysis-heavy, or synthesis-heavy, prioritise reasoning quality, structure, and rewrite discipline. If you run operations, prioritise guardrails, source access, traceability, and ease of verification.',
+          'The best stack is usually small: one primary tool, one secondary tool, and one review habit. As soon as you stack products you cannot justify, you are no longer buying leverage. You are buying confusion.',
         ],
       },
       {
-        title: '4. Les garde-fous non négociables',
+        title: '4. The guardrails you should not negotiate away',
         body: [
-          'L’IA est forte pour accélérer, pas pour porter seule la responsabilité. Tout ce qui est public, client-facing, financier, juridique ou réputationnel doit rester sous contrôle humain explicite.',
-          'Les erreurs les plus coûteuses viennent rarement d’un modèle “stupide”. Elles viennent d’un usage paresseux : contexte insuffisant, absence de source de vérité, confiance excessive dans une réponse proprement formulée.',
-          'La règle simple : plus l’impact d’une sortie est élevé, plus la validation doit être proche, humaine et documentée.',
+          'AI is strong at acceleration, not ownership. Anything public, client-facing, financial, legal, or reputation-sensitive should remain under explicit human control.',
+          'The most expensive failures rarely come from a model being obviously dumb. They come from lazy operating conditions: weak context, no source of truth, or overconfidence in an answer just because it sounds clean.',
+          'The simple rule is this: the higher the impact of the output, the closer, more human, and more documented the validation needs to be.',
         ],
       },
       {
-        title: '5. La progression réaliste pour une équipe ou un freelance',
+        title: '5. The realistic adoption path for teams and freelancers',
         body: [
-          'Premier niveau : utiliser l’IA comme assistant de préparation. Deuxième niveau : standardiser quelques formats utiles. Troisième niveau : automatiser seulement les tâches répétitives dont les erreurs sont détectables.',
-          'Cette progression est importante parce qu’elle garde le système gouvernable. On peut mesurer le gain, voir les erreurs, retirer une brique si elle dégrade le flux de travail.',
-          'Les équipes qui vont trop vite vers “l’autonomie” finissent souvent avec des workflows fragiles, mal compris et impossibles à auditer. Les équipes qui construisent par couches gardent le contrôle et apprennent plus vite.',
+          'Level one: use AI as a preparation assistant. Level two: standardise a few high-value output formats. Level three: automate only repetitive tasks whose mistakes are easy to detect.',
+          'That progression matters because it keeps the system governable. You can measure the gain, see the failure modes, and remove a layer if it starts degrading the workflow.',
+          'Teams that rush toward “autonomy” usually end up with brittle workflows nobody really understands. Teams that build in layers keep control and learn faster.',
         ],
       },
     ],
     checklist: [
       {
-        title: 'Checklist avant d’ajouter l’IA à un workflow',
+        title: 'Checklist before adding AI to a workflow',
         items: [
-          'La tâche revient souvent et suit un schéma reconnaissable.',
-          'Le gain attendu est concret : temps gagné, friction réduite, clarté améliorée.',
-          'La sortie attendue peut être décrite clairement.',
-          'Une personne sait vérifier rapidement le résultat.',
-          'Le rollback est simple si l’usage ne tient pas la route.',
+          'The task happens often and follows a recognisable pattern.',
+          'The expected gain is concrete: time saved, less friction, clearer output.',
+          'The desired output can be described precisely.',
+          'Someone can verify the result quickly.',
+          'Rollback is simple if the workflow proves weak.',
         ],
       },
       {
-        title: 'Checklist de validation avant publication ou envoi',
+        title: 'Checklist before publishing or sending AI-assisted output',
         items: [
-          'Les faits sensibles ont été relus.',
-          'Les chiffres, noms et liens ont été vérifiés.',
-          'Le ton et la responsabilité finale restent humains.',
-          'Le texte n’a pas perdu en précision juste pour gagner en vitesse.',
+          'Sensitive facts have been reviewed.',
+          'Numbers, names, and links have been checked.',
+          'Tone and final responsibility remain human.',
+          'The text did not lose precision just to gain speed.',
         ],
       },
     ],
     faqs: [
       {
-        question: 'Comment utiliser l’IA au travail sans perdre du temps ?',
+        question: 'How do you use AI at work without wasting time?',
         answer:
-          'En la limitant d’abord aux tâches répétitives et préparatoires, avec un format de sortie clair et une validation humaine sur ce qui compte.',
+          'Start with repetitive preparation work, require a clear output format, and keep human review on anything that actually matters.',
       },
       {
-        question: 'Quelles tâches déléguer en premier à l’IA au bureau ?',
+        question: 'Which office tasks should you delegate to AI first?',
         answer:
-          'Résumé, synthèse, préparation de briefings, comparaison d’options, nettoyage de notes, structuration de brouillons et classement d’information.',
+          'Summaries, briefing prep, option comparison, note cleanup, draft structuring, and information triage are usually the best first candidates.',
       },
       {
-        question: 'Faut-il utiliser des agents IA au travail ?',
+        question: 'Should teams use AI agents at work?',
         answer:
-          'Oui, mais seulement pour des tâches internes, cadrées et vérifiables. Un agent sans garde-fous ajoute plus de risque que de valeur.',
+          'Yes, but only for internal tasks that are bounded, observable, and easy to verify. An agent without guardrails creates more risk than value.',
       },
     ],
   },
   {
     slug: 'choisir-les-bons-outils-ia',
-    title: 'Choisir les bons outils IA',
+    title: 'How to Choose the Right AI Tools',
     description:
-      'Le hub Signal IA pour comparer les modèles et outils IA utiles avant de payer pour du storytelling.',
+      'The Signal IA hub for comparing models and AI tools before you pay for storytelling instead of leverage.',
     eyebrow: 'Pillar page',
     intro:
-      'Un point d’entrée simple pour comparer les outils IA avant d’acheter des slogans.',
+      'A clean starting point for choosing AI tools based on real jobs, not the loudest landing page.',
     body: [
-      'Ce hub regroupe les comparatifs et sélections d’outils qui aident à choisir une stack IA cohérente selon les usages réels.',
-      'Le mauvais réflexe consiste à choisir selon la hype, la démo ou le branding du moment. Le bon réflexe consiste à partir d’un travail concret : rédiger, chercher, synthétiser, automatiser, comparer ou produire plus proprement.',
-      'Un bon outil IA ne se juge pas seulement à la qualité brute de ses réponses. Il se juge à sa place dans ton système : qualité, vitesse, friction, gouvernance, coût et stabilité.',
+      'This hub groups the comparisons and tool roundups that help you build a coherent AI stack around actual use cases.',
+      'The bad reflex is to choose by hype, demo effect, or branding. The useful reflex is to begin with a real job: write, research, summarise, automate, compare, or produce cleaner output faster.',
+      'A good AI tool should not be judged only by raw output quality. It should be judged by its role inside your system: quality, speed, friction, governance, cost, and stability.',
     ],
     categories: ['comparatifs', 'outils', 'guides'],
     featuredArticleIds: [
@@ -195,109 +195,196 @@ export const pillarPages: PillarPage[] = [
       '07-meilleures-ia-gratuites-le-vrai-comparatif',
     ],
     quickWins: [
-      'Choisis d’abord un usage principal, pas un “meilleur outil absolu”.',
-      'Teste les outils sur une vraie tâche répétée pendant plusieurs jours, pas sur un benchmark de 5 minutes.',
-      'Regarde la friction de l’interface, des exports et des limites avant de regarder la démo marketing.',
-      'Si tu paies, exige un gain mesurable : qualité, temps, volume ou cohérence.',
+      'Choose a primary use case first, not a mythical “best tool overall”.',
+      'Test tools on a real repeated task for several days, not a five-minute benchmark ritual.',
+      'Measure interface friction, export quality, limits, and stability before you get seduced by the demo.',
+      'If you pay, demand a visible gain in quality, time, output volume, or consistency.',
     ],
     sections: [
       {
-        title: '1. Commencer par le job à faire',
+        title: '1. Start with the job to be done',
         body: [
-          'Le choix d’un outil IA devient simple dès que tu remplaces la question “quel est le meilleur ?” par “quel travail dois-je mieux faire ?”. Rédiger un brouillon, résumer un corpus, comparer des options, recycler du contenu, ou orchestrer des tâches internes ne demandent pas les mêmes forces.',
-          'Cette approche évite les comparatifs paresseux qui mettent tout dans le même sac. Un excellent outil de rédaction peut être médiocre en intégration. Un bon outil gratuit pour tester plusieurs modèles peut être mauvais comme brique centrale de production.',
-          'En clair : choisis par fonction, pas par prestige.',
+          'Choosing an AI tool becomes much easier once you stop asking “Which one is best?” and start asking “What work do I need done better?” Drafting, summarising a corpus, comparing options, repurposing content, or orchestrating internal tasks do not require the same strengths.',
+          'This mindset protects you from lazy comparisons that throw every product into the same bucket. A great writing tool can be weak on integration. A good free model switcher can be a poor central production layer.',
+          'In short: choose by function, not prestige.',
         ],
       },
       {
-        title: '2. Les critères qui comptent vraiment',
+        title: '2. The criteria that actually matter',
         body: [
-          'Pour juger un outil IA sérieusement, regarde au minimum six critères : qualité de sortie, vitesse, stabilité, friction d’usage, intégration au workflow et coût réel. Le coût réel inclut le temps perdu quand l’outil fait joli mais t’oblige à retravailler tout ce qu’il produit.',
-          'Ajoute ensuite un critère souvent négligé : la gouvernance. Si l’outil doit être utilisé en équipe, il faut regarder la visibilité, le contrôle, la reprise en main et la facilité de validation.',
-          'Un outil légèrement moins impressionnant mais plus stable, plus sobre et mieux cadré est souvent un meilleur achat qu’un produit très démonstratif.',
+          'A serious evaluation should include at least six criteria: output quality, speed, stability, usage friction, workflow integration, and real cost. Real cost includes the rework tax you pay when a tool sounds impressive but forces you to rewrite everything it touches.',
+          'Then add a seventh criterion people often ignore: governance. If a team will use the tool, you need visibility, control, reviewability, and easy handover when something goes wrong.',
+          'A slightly less dazzling tool that is calmer, cleaner, and more stable is often a better buy than a product built for conference demos.',
         ],
       },
       {
-        title: '3. Comment comparer les grands modèles sans se raconter d’histoires',
+        title: '3. How to compare major models without fooling yourself',
         body: [
-          'Les grands modèles généralistes doivent être comparés sur des cas réels : même document, même consigne, même format attendu. Sinon, tu juges surtout ton ressenti du moment.',
-          'Pour la rédaction et l’analyse, la structure et la tenue du raisonnement comptent souvent plus que l’effet “wow”. Pour un usage grand public ou multi-usage, l’écosystème et la polyvalence prennent du poids. Pour une équipe déjà installée dans un environnement précis, l’intégration peut l’emporter sur la qualité perçue brute.',
-          'Le bon verdict n’est pas “X gagne”. Le bon verdict est “X est le meilleur compromis pour ce type d’usage”.',
+          'General-purpose models should be compared on real tasks: same source material, same prompt, same expected output format. Otherwise, you are mostly benchmarking your mood.',
+          'For writing and analysis, reasoning quality and structure usually matter more than the “wow” factor. For broad public use, ecosystem and versatility matter more. For teams already committed to one software environment, integration can matter more than small model-quality differences.',
+          'The right conclusion is rarely “X wins”. The useful conclusion is “X is the best compromise for this use case”.',
         ],
       },
       {
-        title: '4. Outils gratuits, spécialisés et agents : quand chacun devient rationnel',
+        title: '4. When free tools, specialised tools, and agents make sense',
         body: [
-          'Les outils gratuits sont excellents pour découvrir, tester et comparer. Ils sont rarement la meilleure base d’un process critique à long terme. Les outils spécialisés gagnent quand la tâche est claire : transcription, résumé, réutilisation de contenu, recherche documentaire.',
-          'Les agents et orchestrateurs deviennent intéressants quand le travail est multi-étapes, interne et vérifiable. Ils n’ont de valeur que si le périmètre est clair et les actions traçables.',
-          'Autrement dit : plus le besoin est stable et répétitif, plus un outil spécialisé ou orchestré devient logique. Plus tu explores, plus un généraliste ou un comparateur de modèles suffit.',
+          'Free AI tools are excellent for exploration, learning, and quick comparison. They are rarely the best foundation for a critical long-term workflow. Specialised tools win when the job is clear: transcription, research, summarisation, repurposing, or source-specific retrieval.',
+          'Agents and orchestration layers become rational when the work is multi-step, internal, and verifiable. Their value does not come from the word “agent”. It comes from clarity of scope and traceable execution.',
+          'Put differently: the more stable and repetitive the need, the more sensible a specialised or orchestrated tool becomes. The more you are still exploring, the more a strong generalist remains enough.',
         ],
       },
       {
-        title: '5. Construire une stack légère au lieu d’une collection de jouets',
+        title: '5. Build a light stack, not a toy collection',
         body: [
-          'Une bonne stack IA n’est pas large. Elle est cohérente. Souvent, un outil principal pour penser / rédiger, un outil secondaire pour un besoin pointu, et éventuellement une couche d’automatisation interne suffisent.',
-          'Le piège classique est d’acheter plusieurs outils qui se recouvrent presque entièrement. On croit acheter de la puissance, on achète surtout de la confusion, des abonnements et des routines éclatées.',
-          'Si tu ne peux pas expliquer en une phrase le rôle de chaque outil dans ton système, ta stack est probablement déjà trop grosse.',
+          'A good AI stack is not broad. It is coherent. In many cases, one primary tool for thinking and drafting, one secondary tool for a narrow job, and maybe a small internal automation layer are enough.',
+          'The classic trap is paying for several products that overlap almost completely. People think they are buying power. They are usually buying subscription sprawl, confusion, and fragmented habits.',
+          'If you cannot explain the role of each tool in one sentence, your stack is probably already too big.',
         ],
       },
     ],
     checklist: [
       {
-        title: 'Checklist avant de payer un outil IA',
+        title: 'Checklist before paying for an AI tool',
         items: [
-          'L’outil a été testé sur un vrai workflow, pas seulement sur une démo.',
-          'Le gain attendu est mesurable sur la qualité ou le temps.',
-          'La sortie est exploitable sans réécriture totale.',
-          'Le coût mensuel reste proportionné au gain observé.',
-          'Le rôle de l’outil dans la stack est clair et non redondant.',
+          'The tool was tested on a real workflow, not just a guided demo.',
+          'The expected gain is measurable in quality or time.',
+          'The output is usable without a total rewrite.',
+          'Monthly cost stays proportional to the gain observed.',
+          'The tool has a clear role in the stack and does not duplicate another layer.',
         ],
       },
       {
-        title: 'Checklist de comparaison entre deux outils',
+        title: 'Checklist for comparing two AI tools',
         items: [
-          'Même tâche, même consigne, même corpus, même format de sortie.',
-          'Comparaison de la qualité mais aussi de la vitesse et de la friction.',
-          'Vérification de l’export, des limites et de la stabilité.',
-          'Verdict rédigé par usage : rédaction, recherche, synthèse, automatisation.',
+          'Same task, same prompt, same corpus, same output format.',
+          'Compare not only quality, but also speed and friction.',
+          'Check exports, limits, and stability.',
+          'Write the verdict by use case: writing, research, summarisation, automation.',
         ],
       },
     ],
     faqs: [
       {
-        question: 'Quel est le meilleur outil IA en 2026 ?',
+        question: 'What is the best AI tool in 2026?',
         answer:
-          'Il n’y en a pas un pour tout. Le meilleur choix dépend du job à faire : écrire, comparer, chercher, recycler du contenu ou automatiser un workflow.',
+          'There is no universal best option. The right tool depends on the job: writing, research, comparison, content repurposing, or workflow automation.',
       },
       {
-        question: 'Comment choisir entre ChatGPT, Claude et Gemini ?',
+        question: 'How should you choose between ChatGPT, Claude, and Gemini?',
         answer:
-          'En testant le même usage réel sur chacun, puis en jugeant le meilleur compromis entre qualité, intégration, vitesse et confort de travail.',
+          'Run the same real task through each one and judge the best compromise between quality, integration, speed, and working comfort.',
       },
       {
-        question: 'Les outils IA gratuits suffisent-ils ?',
+        question: 'Are free AI tools enough?',
         answer:
-          'Oui pour explorer et apprendre. Rarement pour structurer un usage pro intensif durable.',
+          'They are often enough for exploration and learning, but rarely enough to anchor an intensive long-term professional workflow.',
       },
     ],
   },
   {
     slug: 'business-ia-credible',
-    title: 'Construire un business IA crédible',
+    title: 'How to Build a Credible AI Business',
     description:
-      'Le hub Signal IA pour éviter le théâtre IA et construire une offre utile, crédible et vérifiable.',
+      'The Signal IA hub for avoiding AI theatre and building an offer that is useful, credible, and verifiable.',
     eyebrow: 'Pillar page',
     intro:
-      'Pour les équipes et indépendants qui veulent faire du business IA sans vendre du vent.',
+      'For operators, founders, and independents who want to build something real with AI instead of selling fog.',
     body: [
-      'Ce hub relie les contenus Signal IA sur la valeur réelle, le cadrage d’offre et les pièges fréquents des projets IA mal pensés.',
-      'Commencer petit, vérifier vite, mesurer le gain : c’est plus utile que brander du brouillard.',
+      'This hub connects the Signal IA content that matters if you care about real value: sharper offer design, tighter execution, and a healthier relationship with AI hype.',
+      'The point is not to launch “an AI business” because the label is hot. The point is to solve an expensive, repeated problem with a system that can be explained, delivered, and checked.',
+      'Start small, validate early, measure the gain, and keep the offer narrow enough to prove. That discipline is far more useful than trying to look futuristic.',
     ],
     categories: ['business', 'guides', 'agents'],
     featuredArticleIds: [
       '03-pourquoi-90-des-projets-ia-sont-du-theatre',
       '06-comment-construire-un-business-avec-lia-sans-vendre-du-vent',
       '02-quest-ce-quun-agent-ia',
+    ],
+    quickWins: [
+      'Sell a concrete result, not “AI transformation” as a vague identity.',
+      'Start with a service or workflow layer before fantasising about a SaaS.',
+      'Choose a narrow customer and a narrow pain point so proof is easier to build.',
+      'Keep human responsibility visible instead of pretending the system is magically autonomous.',
+    ],
+    sections: [
+      {
+        title: '1. Real AI businesses start with friction, not fascination',
+        body: [
+          'Most weak AI offers begin with a technology-first question: “How do we build something in AI?” Stronger offers start with a business-first question: “What repeated friction is expensive enough that removing it would matter?”',
+          'That distinction sounds basic, but it changes everything. If the problem is real, you can define scope, price value, explain the workflow, and show what gets better. If the starting point is fascination with the technology, you usually end up packaging possibility instead of solving pain.',
+          'The market does not need more AI-flavoured abstraction. It needs clearer systems that reduce workload, decision latency, or quality drift in a specific environment.',
+        ],
+      },
+      {
+        title: '2. Why so many AI offers collapse into theatre',
+        body: [
+          'AI theatre happens when the signal of modernity becomes more important than the mechanics of delivery. Teams talk about autonomy, copilots, agents, transformation, and leverage, but they cannot explain the exact job, the exact guardrails, or the exact success metric.',
+          'That is why a surprising number of AI projects feel impressive in a pitch and useless in operations. The stack may be technically competent, but the offer is structurally unserious: unclear outcome, weak ownership, no verification, no rollback.',
+          'If a buyer cannot tell what improves, how it is checked, and what remains human, the offer is probably selling atmosphere.',
+        ],
+      },
+      {
+        title: '3. The smartest path is often service first, product later',
+        body: [
+          'A lot of founders want to jump straight into AI SaaS. In most cases, the better move is to begin with a service, a productised workflow, or a highly constrained implementation offer. That gives you exposure to real objections, messy data, weak inputs, and client language.',
+          'Service work is not a detour. It is field research paid for by reality. It tells you which parts of the workflow repeat, which parts break, and which parts clients actually value enough to buy.',
+          'Once those patterns are stable, productisation becomes a strategic choice instead of a fantasy.',
+        ],
+      },
+      {
+        title: '4. How to make an AI offer credible',
+        body: [
+          'Credibility comes from operating clarity. You need a clear customer, a clear pain point, a clear before/after, a clear delivery method, and clear limits. Branding helps later. Proof comes first.',
+          'That proof can take several forms: time saved, cleaner handoffs, faster research cycles, fewer repetitive internal steps, or better content throughput with review intact. The exact metric matters less than the fact that it is concrete and observable.',
+          'An AI offer sounds serious when it is narrow enough to demonstrate and honest enough to admit what still requires human judgment.',
+        ],
+      },
+      {
+        title: '5. The role of agents in a credible business stack',
+        body: [
+          'Agents can absolutely create value, but mostly on the inside. They are useful when they automate bounded, internal, multi-step tasks that can be monitored and checked. They are not a substitute for offer clarity or accountability.',
+          'Used well, agents can improve research prep, internal documentation, triage, monitoring, or workflow coordination. Used badly, they become a way to hide a weak process behind futuristic language.',
+          'The right framing is simple: agents are one possible layer inside a credible business system. They are not the business by themselves.',
+        ],
+      },
+    ],
+    checklist: [
+      {
+        title: 'Checklist before packaging an AI offer',
+        items: [
+          'The target customer and repeated pain point are explicit.',
+          'The promised gain is observable and measurable.',
+          'The delivery method is understandable without hand-waving.',
+          'Human review and responsibility are clearly defined.',
+          'There is a simple rollback or fallback path if the AI layer underperforms.',
+        ],
+      },
+      {
+        title: 'Checklist before building an AI product',
+        items: [
+          'You have seen the workflow in the wild, not only in your head.',
+          'The repeated parts of delivery are obvious enough to systematise.',
+          'You know which edge cases break the process.',
+          'Clients value the outcome enough to pay for it consistently.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How do you build a credible AI business?',
+        answer:
+          'Start from a repeated expensive problem, keep the offer narrow, prove the gain, and make the human responsibility layer explicit.',
+      },
+      {
+        question: 'Should you start with an AI SaaS?',
+        answer:
+          'Usually not. Starting with a service or productised workflow is often the fastest way to learn what customers actually need and value.',
+      },
+      {
+        question: 'Are AI agents enough to define an offer?',
+        answer:
+          'No. Agents can support delivery, but a credible offer still needs a clear customer problem, a measurable outcome, and a trustworthy operating frame.',
+      },
     ],
   },
 ];

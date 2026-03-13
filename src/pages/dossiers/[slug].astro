@@ -3,7 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { pillarPages, type PillarPage } from '../../data/seo';
-import { getArticleSchemaLanguage, getArticleUrl } from '../../data/articles';
+import { getArticleUrl } from '../../data/articles';
 
 const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
 const baseUrl = basePath ? `/${basePath}/` : '/';
@@ -37,7 +37,7 @@ const structuredData = {
   name: page.title,
   description: page.description,
   url: canonicalUrl,
-  inLanguage: 'fr-FR',
+  inLanguage: 'en-US',
   hasPart: featuredArticles.map((article) => ({
     '@type': 'BlogPosting',
     headline: article.data.title,
@@ -59,7 +59,7 @@ const structuredData = {
 };
 ---
 
-<BaseLayout title={page.title} description={page.description} lang="fr" ogLocale="fr_FR" structuredData={structuredData}>
+<BaseLayout title={page.title} description={page.description} lang="en" ogLocale="en_US" structuredData={structuredData}>
   <section class="list-page-header">
     <div class="eyebrow">{page.eyebrow}</div>
     <h1>{page.title}</h1>
@@ -74,8 +74,8 @@ const structuredData = {
   <section class="section">
     <div class="section-head">
       <div>
-        <div class="eyebrow">Vue d’ensemble</div>
-        <h2>Le socle éditorial lié à ce sujet</h2>
+        <div class="eyebrow">Overview</div>
+        <h2>The editorial foundation for this topic</h2>
       </div>
     </div>
     <div class="feature-panel longform-panel">
@@ -87,8 +87,8 @@ const structuredData = {
     <section class="section">
       <div class="section-head">
         <div>
-          <div class="eyebrow">À retenir vite</div>
-          <h2>Les règles qui évitent 80% des erreurs</h2>
+          <div class="eyebrow">Quick takeaways</div>
+          <h2>The rules that prevent most mistakes</h2>
         </div>
       </div>
       <div class="grid quick-grid">
@@ -105,8 +105,8 @@ const structuredData = {
     <section class="section">
       <div class="section-head">
         <div>
-          <div class="eyebrow">Guide longform</div>
-          <h2>Le hub complet</h2>
+          <div class="eyebrow">Long-form guide</div>
+          <h2>The full hub</h2>
         </div>
       </div>
       <div class="stacked-sections">
@@ -123,8 +123,8 @@ const structuredData = {
   <section class="section">
     <div class="section-head">
       <div>
-        <div class="eyebrow">Commencer ici</div>
-        <h2>Les articles les plus utiles</h2>
+        <div class="eyebrow">Start here</div>
+        <h2>The most useful articles</h2>
       </div>
     </div>
     <div class="grid cards">
@@ -137,7 +137,7 @@ const structuredData = {
       <div class="section-head">
         <div>
           <div class="eyebrow">Checklist</div>
-          <h2>À garder sous la main</h2>
+          <h2>Keep these close</h2>
         </div>
       </div>
       <div class="grid cards">
@@ -157,8 +157,8 @@ const structuredData = {
     <section class="section">
       <div class="section-head">
         <div>
-          <div class="eyebrow">Pour aller plus loin</div>
-          <h2>Contenus liés</h2>
+          <div class="eyebrow">Go deeper</div>
+          <h2>Related coverage</h2>
         </div>
       </div>
       <div class="grid cards">
@@ -172,7 +172,7 @@ const structuredData = {
       <div class="section-head">
         <div>
           <div class="eyebrow">FAQ</div>
-          <h2>Questions fréquentes</h2>
+          <h2>Common questions</h2>
         </div>
       </div>
       <div class="stacked-sections">

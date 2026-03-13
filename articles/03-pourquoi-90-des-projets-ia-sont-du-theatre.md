@@ -1,85 +1,101 @@
 ---
-title: "Pourquoi 90% des projets IA sont du théâtre"
-description: "Les raisons pour lesquelles tant de projets IA échouent sans jamais produire de valeur réelle."
+title: "Why 90% of AI projects are theatre"
+description: "Why so many AI projects fail without ever producing durable business value."
 pubDate: 2026-03-10
 slug: "why-90-percent-of-ai-projects-are-theatre"
-locale: fr
+locale: en
+redirectFrom:
+  - "03-pourquoi-90-des-projets-ia-sont-du-theatre"
 category: business
 featured: true
 hero: false
 ---
 
-# Pourquoi 90% des projets IA sont du théâtre
+# Why 90% of AI projects are theatre
 
-La plupart des projets IA ne meurent pas à cause de la techno. Ils meurent parce qu’ils sont conçus comme des démonstrations de modernité, pas comme des systèmes utiles. On colle “IA” sur un workflow flou, on fabrique trois slides, et on appelle ça une stratégie. C’est du théâtre.
+Most AI projects do not die because the technology is weak. They die because they were designed as demonstrations of modernity, not as useful systems. Someone adds “AI” to a fuzzy workflow, builds three slides, and calls it strategy. That is not execution. That is theatre.
 
-## Comment reconnaître un projet IA bidon
-### 1. Il n’y a pas de problème clair
-Si personne n’est capable de dire exactement quelle friction est supprimée, le projet est déjà bancal.
+## How to recognise a fake-serious AI project
 
-### 2. Il n’y a pas de métrique utile
-Quand on mesure seulement des impressions ou de l’enthousiasme, c’est mauvais signe.
+### 1. There is no clear problem
+If nobody can explain exactly which friction is being removed, the project is already unstable.
 
-### 3. Il n’y a pas de source de vérité
-Un projet IA sans source fiable finit par produire des réponses jolies mais toxiques.
+### 2. There is no useful metric
+When the only things being measured are excitement, adoption theatre, or vague impressions, the project has no operational spine.
 
-### 4. Il n’y a pas de garde-fous
-Quand personne ne sait ce que l’IA peut faire, ne peut pas faire, ou doit faire valider, on prépare un accident.
+### 3. There is no source of truth
+An AI system without reliable source material eventually produces answers that sound polished and become quietly toxic.
 
-### 5. Il n’y a pas de vérification
-Le théâtre commence exactement là : on présente un plan comme un résultat.
+### 4. There are no guardrails
+If nobody knows what the system may do, may not do, and must escalate for review, the organisation is preparing an avoidable failure.
 
-## Pourquoi les entreprises tombent dans ce piège
-Parce que l’IA est devenue un signal social. Les gens veulent montrer qu’ils “font de l’IA” avant de savoir pourquoi. Résultat : beaucoup de projets existent surtout pour rassurer l’ego des décideurs ou suivre la mode du moment.
+### 5. There is no verification
+Theatre begins exactly when a plan gets presented as if it were already a result.
 
-## Ce qui fonctionne à la place
-Les bons projets IA commencent petit.
-Ils ont :
-- un problème précis
-- un périmètre borné
-- un coût faible
-- une vérification simple
-- un gain mesurable
-- un rollback possible
+## Why companies keep falling into the trap
+Because AI has become a social signal. People want to be seen as “doing AI” before they know why they are doing it. A surprising number of projects exist mainly to reassure executive ego, satisfy innovation optics, or avoid looking late to the trend.
 
-## Les meilleurs cas d’usage au départ
-- préparation de briefings
+That incentive is powerful. It rewards announcements, pilots, vision decks, and symbolic launches. It does not automatically reward boring things like narrow scope, review discipline, or proof of value.
+
+## What works instead
+The strongest AI projects usually start small.
+
+They have:
+- one precise problem
+- a bounded scope
+- low cost of experimentation
+- simple verification
+- measurable gain
+- an easy rollback path
+
+This is not less ambitious. It is just more serious.
+
+## The best first use cases
+Early AI wins tend to live in preparation and internal acceleration work:
+- briefing prep
 - triage
 - classification
-- synthèse documentaire
-- veille ciblée
-- automatisation de tâches internes répétitives
+- document synthesis
+- targeted monitoring
+- automation of repetitive internal tasks
 
-Pas besoin d’un “copilote omniscient”. Besoin d’un système qui enlève une friction concrète.
+You do not need an “omniscient copilot”. You need a system that removes one concrete friction repeatedly.
 
-## Le vrai critère
-Une bonne question n’est pas : “Peut-on mettre de l’IA ici ?”
-La bonne question est : **“Est-ce que ce système enlève réellement du travail ou ajoute juste une couche de bruit ?”**
+## The real evaluation question
+The weak question is: “Can we add AI here?”
 
-## Comment éviter le théâtre
-- partir d’un problème réel
-- choisir un usage étroit
-- écrire les règles
-- vérifier les sorties
-- mesurer l’impact
-- itérer seulement si ça marche
+The useful question is:
 
-## Mon verdict
-La majorité des projets IA sont du théâtre parce qu’ils veulent le prestige sans la discipline. La technologie n’est pas le vrai problème. Le vrai problème, c’est l’absence de cadrage, de preuves et de responsabilité.
+**Does this system actually remove work, or does it just add a layer of noise with better branding?**
 
-L’IA devient utile quand elle est traitée comme un système opératoire, pas comme un costume d’innovation.
+That one question kills a lot of bad projects early.
+
+## How to avoid AI theatre
+- start from a real problem
+- choose a narrow use case
+- write the operating rules
+- verify outputs
+- measure impact
+- iterate only if the system proves itself
+
+The order matters. Most theatre comes from trying to scale before anything has been validated.
+
+## Final verdict
+Most AI projects become theatre because they want the prestige of innovation without the discipline of operations. The technology is usually not the real issue. The issue is weak framing, absent proof, and blurred responsibility.
+
+AI becomes useful when it is treated like an operating system with boundaries, evidence, and review, not like a costume people wear to look current.
 
 ## FAQ
-### Pourquoi autant de projets IA échouent ?
-Parce qu’ils n’ont ni problème clair, ni métrique utile, ni garde-fous, ni vérification sérieuse.
+### Why do so many AI projects fail?
+Because they lack a clear problem, a useful metric, guardrails, and serious verification.
 
-### Comment savoir si un projet IA est sérieux ?
-Il doit avoir un périmètre clair, des preuves, un gain mesurable et une méthode de vérification.
+### How can you tell whether an AI project is serious?
+It should have bounded scope, observable proof, measurable gain, and an explicit review method.
 
-### Faut-il lancer un grand projet IA dès le départ ?
-Non. Il faut commencer petit, utile, testable, puis élargir si ça marche.
+### Should you launch a large AI project from day one?
+No. Start with something small, useful, and testable, then expand only if the results hold.
 
-## Maillage interne
-- `/ia-pour-entrepreneurs`
-- `comment-construire-un-business-avec-lia-sans-vendre-du-vent.md`
-- `agents-ia-hype-ou-vrai-gain-de-productivite.md`
+## Related reading
+- `/signal-ia/dossiers/business-ia-credible/`
+- `/signal-ia/articles/how-to-build-an-ai-business-without-selling-hype/`
+- `/signal-ia/articles/what-is-an-ai-agent/`
