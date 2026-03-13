@@ -96,6 +96,6 @@ It should have bounded scope, observable proof, measurable gain, and an explicit
 No. Start with something small, useful, and testable, then expand only if the results hold.
 
 ## Related reading
-- `../dossiers/how-to-build-a-credible-ai-business/`
+- `../shadow-ai-agents-the-real-enterprise-risk/`
+- `../what-changed-in-ai-this-month-that-actually-matters/`
 - `../how-to-build-an-ai-business-without-selling-hype/`
-- `../what-is-an-ai-agent/`

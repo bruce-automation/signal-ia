@@ -4,7 +4,7 @@
 1. ChatGPT vs Claude vs Gemini : lequel choisir en 2026 ?
 2. Meilleures IA gratuites : le vrai comparatif
 3. Quel est le meilleur modèle IA pour écrire ?
-4. Quel est le meilleur modèle IA pour coder ?
+4. ✅ Quel est le meilleur modèle IA pour coder ?
 5. Quels modèles IA valent vraiment le prix ?
 6. Faut-il payer ChatGPT Plus en 2026 ?
 7. Claude vaut-il mieux que ChatGPT pour le travail ?
@@ -18,6 +18,7 @@
 13. Les erreurs qui rendent les agents IA inutiles
 14. Agents IA : hype ou vrai gain de productivité ?
 15. Meilleurs cas d’usage des agents IA
+- ✅ Shadow AI agents : le vrai risque en entreprise
 
 ## Cluster 3 — Outils IA populaires
 16. Meilleurs outils IA pour créer du contenu
@@ -37,7 +38,7 @@
 
 ## Cluster 5 — Business / réaction
 28. Pourquoi 90% des projets IA sont du théâtre
-29. Ce qui change vraiment avec les nouveaux modèles IA
+29. ✅ Ce qui change vraiment avec les nouveaux modèles IA
 30. L’IA remplace-t-elle vraiment certains métiers ?
 31. L’IA pour freelances : opportunités réelles vs bullshit
 32. Comment construire un business avec l’IA sans vendre du vent

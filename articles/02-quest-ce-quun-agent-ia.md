@@ -122,5 +122,5 @@ Not cleanly. They mostly replace friction, preparation, triage, and part of repe
 
 ## Related reading
 - `../best-ai-agent-tools-in-2026/`
+- `../shadow-ai-agents-the-real-enterprise-risk/`
 - `../how-to-use-ai-at-work-without-wasting-time/`
-- `../chatgpt-vs-claude-vs-gemini-2026/`

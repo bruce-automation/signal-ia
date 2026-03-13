@@ -113,6 +113,6 @@ Yes, especially for people and teams already living in Google Workspace.
 Usually ChatGPT for breadth, or Claude if writing quality is the priority.
 
 ## Related reading
+- `../best-ai-models-for-coding-in-2026/`
 - `../best-free-ai-tools/`
-- `../best-ai-tools-for-content-creation/`
 - `../how-to-use-ai-at-work-without-wasting-time/`

@@ -85,7 +85,7 @@ export const pillarPages: PillarPage[] = [
     categories: ['guides', 'tools', 'agents'],
     featuredArticleIds: [
       '05-comment-utiliser-lia-au-travail-sans-perdre-du-temps',
-      '04-meilleurs-outils-ia-pour-creer-du-contenu',
+      '10-best-ai-models-for-coding-in-2026',
       '02-quest-ce-quun-agent-ia',
     ],
     quickWins: [
@@ -191,7 +191,7 @@ export const pillarPages: PillarPage[] = [
     categories: ['comparisons', 'tools', 'guides'],
     featuredArticleIds: [
       '01-chatgpt-vs-claude-vs-gemini-2026',
-      '04-meilleurs-outils-ia-pour-creer-du-contenu',
+      '10-best-ai-models-for-coding-in-2026',
       '07-meilleures-ia-gratuites-le-vrai-comparatif',
     ],
     quickWins: [
@@ -297,8 +297,8 @@ export const pillarPages: PillarPage[] = [
     categories: ['business', 'guides', 'agents'],
     featuredArticleIds: [
       '03-pourquoi-90-des-projets-ia-sont-du-theatre',
-      '06-comment-construire-un-business-avec-lia-sans-vendre-du-vent',
-      '02-quest-ce-quun-agent-ia',
+      '11-shadow-ai-agents-the-real-enterprise-risk',
+      '12-what-changed-in-ai-this-month-that-actually-matters',
     ],
     quickWins: [
       'Sell a concrete result, not “AI transformation” as a vague identity.',
