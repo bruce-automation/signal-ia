@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { pillarPages } from '../../data/seo';
+---
+
+<BaseLayout
+  title="Dossiers"
+  description="Pages piliers Signal IA pour regrouper les meilleurs contenus par sujet stratégique."
+>
+  <section class="list-page-header">
+    <div class="eyebrow">Hub éditorial</div>
+    <h1>Dossiers</h1>
+    <p>Des pages piliers pour capter les grandes intentions de recherche et redistribuer vers les bons articles.</p>
+  </section>
+
+  <section class="section">
+    <div class="grid cards">
+      {pillarPages.map((page) => (
+        <article class="card">
+          <div class="kicker">pillar page</div>
+          <h3><a href={`/dossiers/${page.slug}/`}>{page.title}</a></h3>
+          <p>{page.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

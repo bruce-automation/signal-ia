@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categoryMeta } from '../../data/seo';
+---
+
+<BaseLayout
+  title="Catégories"
+  description="Parcourir Signal IA par catégories éditoriales : comparatifs, guides, agents, business et outils."
+>
+  <section class="list-page-header">
+    <div class="eyebrow">Taxonomie</div>
+    <h1>Catégories</h1>
+    <p>Une navigation simple pour trouver le bon angle plus vite.</p>
+  </section>
+
+  <section class="section">
+    <div class="grid cards">
+      {Object.entries(categoryMeta).map(([slug, meta]) => (
+        <article class="card">
+          <div class="kicker">{slug}</div>
+          <h3><a href={`/categories/${slug}/`}>{meta.title}</a></h3>
+          <p>{meta.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

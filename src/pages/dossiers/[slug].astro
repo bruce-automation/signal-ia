@@ -1,0 +1,156 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { pillarPages, type PillarPage } from '../../data/seo';
+
+export async function getStaticPaths() {
+  return pillarPages.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props as { page: PillarPage };
+const allArticles = await getCollection('articles');
+
+const featuredArticles = page.featuredArticleIds
+  .map((id) => allArticles.find((article) => article.id === id))
+  .filter(Boolean) as CollectionEntry<'articles'>[];
+
+const relatedArticles = allArticles
+  .filter(
+    (article) =>
+      page.categories.includes(article.data.category) &&
+      !page.featuredArticleIds.includes(article.id),
+  )
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+---
+
+<BaseLayout title={page.title} description={page.description}>
+  <section class="list-page-header">
+    <div class="eyebrow">{page.eyebrow}</div>
+    <h1>{page.title}</h1>
+    <p>{page.intro}</p>
+    <div class="tag-row">
+      {page.categories.map((category) => (
+        <a class="tag" href={`/categories/${category}/`}>{category}</a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Vue d’ensemble</div>
+        <h2>Le socle éditorial lié à ce sujet</h2>
+      </div>
+    </div>
+    <div class="feature-panel longform-panel">
+      {page.body.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </section>
+
+  {page.quickWins && page.quickWins.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">À retenir vite</div>
+          <h2>Les règles qui évitent 80% des erreurs</h2>
+        </div>
+      </div>
+      <div class="grid quick-grid">
+        {page.quickWins.map((item) => (
+          <article class="card quick-card">
+            <p>{item}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {page.sections && page.sections.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Guide longform</div>
+          <h2>Le hub complet</h2>
+        </div>
+      </div>
+      <div class="stacked-sections">
+        {page.sections.map((section) => (
+          <article class="feature-panel longform-panel">
+            <h3>{section.title}</h3>
+            {section.body.map((paragraph) => <p>{paragraph}</p>)}
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Commencer ici</div>
+        <h2>Les articles les plus utiles</h2>
+      </div>
+    </div>
+    <div class="grid cards">
+      {featuredArticles.map((article) => <ArticleCard article={article} />)}
+    </div>
+  </section>
+
+  {page.checklist && page.checklist.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Checklist</div>
+          <h2>À garder sous la main</h2>
+        </div>
+      </div>
+      <div class="grid cards">
+        {page.checklist.map((list) => (
+          <article class="card checklist-card">
+            <h3>{list.title}</h3>
+            <ul>
+              {list.items.map((item) => <li>{item}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {relatedArticles.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Pour aller plus loin</div>
+          <h2>Contenus liés</h2>
+        </div>
+      </div>
+      <div class="grid cards">
+        {relatedArticles.map((article) => <ArticleCard article={article} />)}
+      </div>
+    </section>
+  )}
+
+  {page.faqs && page.faqs.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">FAQ</div>
+          <h2>Questions fréquentes</h2>
+        </div>
+      </div>
+      <div class="stacked-sections">
+        {page.faqs.map((faq) => (
+          <article class="feature-panel longform-panel faq-item">
+            <h3>{faq.question}</h3>
+            <p>{faq.answer}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+</BaseLayout>

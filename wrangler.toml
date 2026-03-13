@@ -1,0 +1,5 @@
+# Minimal Cloudflare Pages handoff config.
+# No auth or deployment required for local work.
+name = "signal-ia"
+compatibility_date = "2026-03-12"
+pages_build_output_dir = "./dist"

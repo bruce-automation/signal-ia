@@ -1,0 +1,56 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+}
+
+const { title, description, canonical } = Astro.props;
+const pageTitle = `${title} | Signal IA`;
+const url = new URL(Astro.url.pathname, Astro.site);
+const canonicalUrl = canonical ?? url.toString();
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Signal IA" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="brand">Signal IA</a>
+        <nav class="nav">
+          <a href="/articles">Articles</a>
+          <a href="/categories">Catégories</a>
+          <a href="/dossiers">Dossiers</a>
+          <a href="/rss.xml">RSS</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Le média francophone qui filtre le bruit de l’IA.</p>
+      </div>
+    </footer>
+  </body>
+</html>

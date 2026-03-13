@@ -1,0 +1,99 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { categoryMeta, pillarPages } from '../data/seo';
+
+const articles = (await getCollection('articles')).sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+);
+
+const featured = articles.filter((article) => article.data.featured).slice(0, 3);
+const guides = articles.filter((article) => article.data.category === 'guides').slice(0, 3);
+const comparatifs = articles.filter((article) => article.data.category === 'comparatifs').slice(0, 3);
+---
+
+<BaseLayout
+  title="Signal IA"
+  description="Le média francophone qui filtre le bruit de l’IA et montre ce qui change vraiment."
+>
+  <section class="hero">
+    <div class="eyebrow">Signal IA</div>
+    <h1>Le média francophone qui filtre le bruit de l’IA.</h1>
+    <p>
+      Comparatifs, guides, agents, outils, business : on trie le bruit, on garde le signal.
+    </p>
+    <div class="cta-row">
+      <a class="button primary" href="/articles">Voir les sujets chauds</a>
+      <a class="button" href="/categories/comparatifs/">Lire les comparatifs</a>
+      <a class="button" href="/categories/guides/">Explorer les guides</a>
+    </div>
+    <div class="tag-row">
+      <span class="tag">Comparatifs</span>
+      <span class="tag">Guides utiles</span>
+      <span class="tag">Agents</span>
+      <span class="tag">Business</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Derniers décryptages</div>
+        <h2>Ce qui change vraiment</h2>
+      </div>
+      <p>Ici, pas de bruit de salon ni de panique techno. On publie ce qui aide à comprendre, choisir et agir.</p>
+    </div>
+    <div class="grid cards">
+      {featured.map((article) => <ArticleCard article={article} />)}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Guides utiles</div>
+        <h2>Des articles faits pour bosser avec l’IA, pas la contempler.</h2>
+      </div>
+    </div>
+    <div class="grid cards">
+      {guides.map((article) => <ArticleCard article={article} />)}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Comparatifs</div>
+        <h2>Comparer les options avant d’acheter des slogans.</h2>
+      </div>
+    </div>
+    <div class="grid cards">
+      {comparatifs.map((article) => <ArticleCard article={article} />)}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Navigation SEO</div>
+        <h2>Entrées propres par sujet et intention</h2>
+      </div>
+      <p>Une couche légère pour mieux redistribuer vers les bons contenus.</p>
+    </div>
+    <div class="tag-row">
+      {Object.entries(categoryMeta).map(([slug, meta]) => (
+        <a class="tag" href={`/categories/${slug}/`}>{meta.title}</a>
+      ))}
+    </div>
+    <div class="grid cards">
+      {pillarPages.map((page) => (
+        <article class="card">
+          <div class="kicker">pillar page</div>
+          <h3><a href={`/dossiers/${page.slug}/`}>{page.title}</a></h3>
+          <p>{page.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
