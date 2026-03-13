@@ -13,7 +13,7 @@ const articles = (await getCollection('articles')).sort(
 
 const featured = articles.filter((article) => article.data.featured).slice(0, 3);
 const guides = articles.filter((article) => article.data.category === 'guides').slice(0, 3);
-const comparatifs = articles.filter((article) => article.data.category === 'comparatifs').slice(0, 3);
+const comparisons = articles.filter((article) => article.data.category === 'comparatifs').slice(0, 3);
 const baseSiteUrl = new URL(baseUrl, Astro.site).toString();
 const socialImageUrl = new URL(socialImage.replace(/^\//, ''), new URL(baseUrl, Astro.site)).toString();
 const structuredData = {
@@ -22,7 +22,7 @@ const structuredData = {
   name: siteName,
   description: siteTagline,
   url: baseSiteUrl,
-  inLanguage: 'fr-FR',
+  inLanguage: 'en',
   image: socialImageUrl,
 };
 ---
@@ -31,22 +31,24 @@ const structuredData = {
   title="Signal IA"
   description={siteTagline}
   noTitleSuffix={true}
+  lang="en"
+  ogLocale="en_US"
   structuredData={structuredData}
 >
   <section class="hero">
     <div class="eyebrow">Signal IA</div>
-    <h1>Le média francophone qui filtre le bruit de l’IA.</h1>
+    <h1>The AI publication that filters the noise.</h1>
     <p>
-      Comparatifs, guides, agents, outils, business : on trie le bruit, on garde le signal.
+      Comparisons, guides, agents, tools, business: we cut through the hype and keep the signal.
     </p>
     <div class="cta-row">
-      <a class="button primary" href={`${baseUrl}articles/`}>Voir les sujets chauds</a>
-      <a class="button" href={`${baseUrl}categories/comparatifs/`}>Lire les comparatifs</a>
-      <a class="button" href={`${baseUrl}categories/guides/`}>Explorer les guides</a>
+      <a class="button primary" href={`${baseUrl}articles/`}>Browse latest analysis</a>
+      <a class="button" href={`${baseUrl}categories/comparatifs/`}>Read comparisons</a>
+      <a class="button" href={`${baseUrl}categories/guides/`}>Explore guides</a>
     </div>
     <div class="tag-row">
-      <span class="tag">Comparatifs</span>
-      <span class="tag">Guides utiles</span>
+      <span class="tag">Comparisons</span>
+      <span class="tag">Practical guides</span>
       <span class="tag">Agents</span>
       <span class="tag">Business</span>
     </div>
@@ -55,10 +57,10 @@ const structuredData = {
   <section class="section">
     <div class="section-head">
       <div>
-        <div class="eyebrow">Derniers décryptages</div>
-        <h2>Ce qui change vraiment</h2>
+        <div class="eyebrow">Latest analysis</div>
+        <h2>What actually matters</h2>
       </div>
-      <p>Ici, pas de bruit de salon ni de panique techno. On publie ce qui aide à comprendre, choisir et agir.</p>
+      <p>No conference noise, no AI panic. Just the pieces that help you understand, choose, and act.</p>
     </div>
     <div class="grid cards">
       {featured.map((article) => <ArticleCard article={article} />)}
@@ -68,8 +70,8 @@ const structuredData = {
   <section class="section">
     <div class="section-head">
       <div>
-        <div class="eyebrow">Guides utiles</div>
-        <h2>Des articles faits pour bosser avec l’IA, pas la contempler.</h2>
+        <div class="eyebrow">Practical guides</div>
+        <h2>Articles built for working with AI, not admiring it.</h2>
       </div>
     </div>
     <div class="grid cards">
@@ -80,22 +82,22 @@ const structuredData = {
   <section class="section">
     <div class="section-head">
       <div>
-        <div class="eyebrow">Comparatifs</div>
-        <h2>Comparer les options avant d’acheter des slogans.</h2>
+        <div class="eyebrow">Comparisons</div>
+        <h2>Compare options before you buy slogans.</h2>
       </div>
     </div>
     <div class="grid cards">
-      {comparatifs.map((article) => <ArticleCard article={article} />)}
+      {comparisons.map((article) => <ArticleCard article={article} />)}
     </div>
   </section>
 
   <section class="section">
     <div class="section-head">
       <div>
-        <div class="eyebrow">Navigation SEO</div>
-        <h2>Entrées propres par sujet et intention</h2>
+        <div class="eyebrow">SEO navigation</div>
+        <h2>Clean entry points by topic and intent</h2>
       </div>
-      <p>Une couche légère pour mieux redistribuer vers les bons contenus.</p>
+      <p>A lightweight layer that routes readers toward the right content cluster.</p>
     </div>
     <div class="tag-row">
       {Object.entries(categoryMeta).map(([slug, meta]) => (

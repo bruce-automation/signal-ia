@@ -9,11 +9,18 @@ const { article } = Astro.props;
 const { title, description, category, pubDate } = article.data;
 const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
 const baseUrl = basePath ? `/${basePath}/` : '/';
+const categoryLabels = {
+  comparatifs: 'AI Comparisons',
+  guides: 'AI Guides',
+  agents: 'AI Agents',
+  business: 'AI Business',
+  outils: 'AI Tools',
+} as const;
 ---
 
 <article class="card">
-  <div class="kicker"><a href={`${baseUrl}categories/${category}/`}>{category}</a></div>
+  <div class="kicker"><a href={`${baseUrl}categories/${category}/`}>{categoryLabels[category]}</a></div>
   <h3><a href={`${baseUrl}articles/${article.id}/`}>{title}</a></h3>
   <p>{description}</p>
-  <div class="meta">{pubDate.toLocaleDateString('fr-FR')}</div>
+  <div class="meta">{pubDate.toLocaleDateString('en-GB')}</div>
 </article>

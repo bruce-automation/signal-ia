@@ -13,23 +13,25 @@ const articles = (await getCollection('articles')).sort(
 
 <BaseLayout
   title="Articles"
-  description="Tous les articles Signal IA : comparatifs, guides, agents, outils et business."
+  description="All Signal IA articles: comparisons, guides, agents, tools, and AI business coverage."
+  lang="en"
+  ogLocale="en_US"
 >
   <section class="list-page-header">
-    <div class="eyebrow">Archives</div>
-    <h1>Tous les articles</h1>
-    <p>Un index simple, lisible, maintenable.</p>
+    <div class="eyebrow">Archive</div>
+    <h1>All articles</h1>
+    <p>A simple, readable, maintainable index.</p>
     <div class="cta-row">
-      <a class="button" href={`${baseUrl}categories/`}>Voir les catégories</a>
-      <a class="button" href={`${baseUrl}dossiers/`}>Voir les dossiers</a>
+      <a class="button" href={`${baseUrl}categories/`}>Browse categories</a>
+      <a class="button" href={`${baseUrl}dossiers/`}>Browse guides</a>
     </div>
   </section>
 
   <section class="section">
     <div class="section-head">
       <div>
-        <div class="eyebrow">Explorer</div>
-        <h2>Entrer par une intention de recherche</h2>
+        <div class="eyebrow">Explore</div>
+        <h2>Start from a search intent</h2>
       </div>
     </div>
     <div class="tag-row">

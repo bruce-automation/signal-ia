@@ -1,38 +1,38 @@
 export const categoryMeta = {
   comparatifs: {
-    title: 'Comparatifs IA',
+    title: 'AI Comparisons',
     description:
-      'Comparer les principaux outils et modèles IA sans reprendre le marketing des éditeurs.',
+      'Compare leading AI tools and models without recycling vendor marketing.',
     intro:
-      'Des comparatifs simples pour choisir un outil IA selon ton usage réel, pas selon le bruit.',
+      'Straight comparisons built around real use cases, not launch-day hype.',
   },
   guides: {
-    title: 'Guides IA',
+    title: 'AI Guides',
     description:
-      'Guides pratiques pour utiliser l’IA au travail, lancer un projet ou structurer un usage utile.',
+      'Practical guides for using AI at work, launching projects, and building useful workflows.',
     intro:
-      'Des guides concrets pour utiliser l’IA avec méthode et sans perdre du temps.',
+      'Concrete playbooks for using AI with structure instead of wasting time.',
   },
   agents: {
-    title: 'Agents IA',
+    title: 'AI Agents',
     description:
-      'Décryptages et cas d’usage sur les agents IA, leur fonctionnement et leurs limites.',
+      'Breakdowns and use cases covering AI agents, how they work, and where they fail.',
     intro:
-      'Comprendre ce qu’est un agent IA, quand il sert vraiment, et quand c’est juste du rebranding.',
+      'Understand what an AI agent is, when it is actually useful, and when it is just rebranding.',
   },
   business: {
-    title: 'Business IA',
+    title: 'AI Business',
     description:
-      'Angles business, stratégie et exécution pour éviter le théâtre IA et construire quelque chose de réel.',
+      'Business, strategy, and execution angles for avoiding AI theatre and building something real.',
     intro:
-      'La couche business de l’IA : valeur, exécution, garde-fous et crédibilité.',
+      'The business layer of AI: value, execution, guardrails, and credibility.',
   },
   outils: {
-    title: 'Outils IA',
+    title: 'AI Tools',
     description:
-      'Sélection et analyse d’outils IA utiles pour produire, comparer et travailler plus vite.',
+      'Selection and analysis of AI tools that genuinely help teams produce, compare, and work faster.',
     intro:
-      'Des outils IA vus par le prisme du gain réel, pas de l’effet waouh.',
+      'AI tools evaluated through real gains, not novelty effect.',
   },
 } as const;
 

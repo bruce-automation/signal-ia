@@ -32,14 +32,20 @@ const structuredData = {
   name: meta.title,
   description: meta.description,
   url: new URL(Astro.url.pathname, Astro.site).toString(),
-  inLanguage: 'fr-FR',
+  inLanguage: 'en',
   isPartOf: new URL(baseUrl, Astro.site).toString(),
 };
 ---
 
-<BaseLayout title={meta.title} description={meta.description} structuredData={structuredData}>
+<BaseLayout
+  title={meta.title}
+  description={meta.description}
+  lang="en"
+  ogLocale="en_US"
+  structuredData={structuredData}
+>
   <section class="list-page-header">
-    <div class="eyebrow">Catégorie</div>
+    <div class="eyebrow">Category</div>
     <h1>{meta.title}</h1>
     <p>{meta.intro}</p>
   </section>
@@ -48,15 +54,15 @@ const structuredData = {
     <section class="section">
       <div class="section-head">
         <div>
-          <div class="eyebrow">À lire en premier</div>
+          <div class="eyebrow">Start here</div>
           <h2>{featured.data.title}</h2>
         </div>
       </div>
       <article class="feature-panel">
         <p>{featured.data.description}</p>
         <div class="cta-row">
-          <a class="button primary" href={`${baseUrl}articles/${featured.id}/`}>Lire l’article</a>
-          <a class="button" href={`${baseUrl}articles/`}>Voir tous les articles</a>
+          <a class="button primary" href={`${baseUrl}articles/${featured.id}/`}>Read article</a>
+          <a class="button" href={`${baseUrl}articles/`}>View all articles</a>
         </div>
       </article>
     </section>
@@ -66,8 +72,8 @@ const structuredData = {
     <section class="section">
       <div class="section-head">
         <div>
-          <div class="eyebrow">Archives utiles</div>
-          <h2>Autres contenus {meta.title.toLowerCase()}</h2>
+          <div class="eyebrow">Archive</div>
+          <h2>More from {meta.title}</h2>
         </div>
       </div>
       <div class="grid cards">

@@ -9,6 +9,8 @@ interface Props {
   type?: 'website' | 'article';
   image?: string;
   noTitleSuffix?: boolean;
+  lang?: string;
+  ogLocale?: string;
   structuredData?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
@@ -19,6 +21,8 @@ const {
   type = 'website',
   image = socialImage,
   noTitleSuffix = false,
+  lang = 'en',
+  ogLocale = 'en_US',
   structuredData,
 } = Astro.props;
 
@@ -38,7 +42,7 @@ const structuredDataItems = Array.isArray(structuredData)
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -49,7 +53,7 @@ const structuredDataItems = Array.isArray(structuredData)
     <meta name="generator" content={Astro.generator} />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="theme-color" content="#0b1020" />
-    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale" content={ogLocale} />
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={pageTitle} />
@@ -75,8 +79,8 @@ const structuredDataItems = Array.isArray(structuredData)
         <a href={baseUrl} class="brand">{siteName}</a>
         <nav class="nav">
           <a href={`${baseUrl}articles/`}>Articles</a>
-          <a href={`${baseUrl}categories/`}>Catégories</a>
-          <a href={`${baseUrl}dossiers/`}>Dossiers</a>
+          <a href={`${baseUrl}categories/`}>Categories</a>
+          <a href={`${baseUrl}dossiers/`}>Guides</a>
           <a href={`${baseUrl}rss.xml`}>RSS</a>
         </nav>
       </div>
