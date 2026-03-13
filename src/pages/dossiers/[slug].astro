@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { pillarPages, type PillarPage } from '../../data/seo';
+import { getArticleSchemaLanguage, getArticleUrl } from '../../data/articles';
 
 const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
 const baseUrl = basePath ? `/${basePath}/` : '/';
@@ -40,7 +41,7 @@ const structuredData = {
   hasPart: featuredArticles.map((article) => ({
     '@type': 'BlogPosting',
     headline: article.data.title,
-    url: new URL(`${baseUrl}articles/${article.id}/`, Astro.site).toString(),
+    url: new URL(getArticleUrl(article, baseUrl), Astro.site).toString(),
   })),
   mainEntity: page.faqs?.length
     ? {

@@ -2,6 +2,8 @@
 title: "Comment construire un business avec l’IA sans vendre du vent"
 description: "Une approche crédible pour bâtir une offre IA utile à partir d’un problème réel."
 pubDate: 2026-03-07
+slug: "how-to-build-an-ai-business-without-selling-hype"
+locale: fr
 category: guides
 featured: true
 hero: false

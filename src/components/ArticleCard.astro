@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { getArticleUrl } from '../data/articles';
 
 interface Props {
   article: CollectionEntry<'articles'>;
@@ -9,6 +10,7 @@ const { article } = Astro.props;
 const { title, description, category, pubDate } = article.data;
 const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
 const baseUrl = basePath ? `/${basePath}/` : '/';
+const articleUrl = getArticleUrl(article, baseUrl);
 const categoryLabels = {
   comparatifs: 'AI Comparisons',
   guides: 'AI Guides',
@@ -20,7 +22,7 @@ const categoryLabels = {
 
 <article class="card">
   <div class="kicker"><a href={`${baseUrl}categories/${category}/`}>{categoryLabels[category]}</a></div>
-  <h3><a href={`${baseUrl}articles/${article.id}/`}>{title}</a></h3>
+  <h3><a href={articleUrl}>{title}</a></h3>
   <p>{description}</p>
   <div class="meta">{pubDate.toLocaleDateString('en-GB')}</div>
 </article>

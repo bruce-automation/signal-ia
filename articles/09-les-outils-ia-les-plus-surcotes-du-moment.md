@@ -2,6 +2,8 @@
 title: "Les outils IA les plus surcotés du moment"
 description: "Les catégories d’outils IA les plus survendues aujourd’hui, et comment éviter de payer pour des promesses creuses."
 pubDate: 2026-03-12
+slug: "the-most-overrated-ai-tools-right-now"
+locale: fr
 category: outils
 featured: true
 hero: false

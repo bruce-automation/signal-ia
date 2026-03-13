@@ -2,6 +2,8 @@
 title: "Pourquoi 90% des projets IA sont du théâtre"
 description: "Les raisons pour lesquelles tant de projets IA échouent sans jamais produire de valeur réelle."
 pubDate: 2026-03-10
+slug: "why-90-percent-of-ai-projects-are-theatre"
+locale: fr
 category: business
 featured: true
 hero: false
