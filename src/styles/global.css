@@ -81,6 +81,14 @@ h3 {
   padding: 1rem 0;
 }
 
+.footer-stack {
+  gap: 1rem;
+}
+
+.footer-nav {
+  flex-wrap: wrap;
+}
+
 .brand {
   font-weight: 800;
   letter-spacing: 0.02em;

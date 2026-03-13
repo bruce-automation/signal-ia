@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
+const baseUrl = basePath ? `/${basePath}/` : '/';
+const canonicalUrl = new URL(`${baseUrl}author/`, Astro.site).toString();
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  name: 'Signal IA Editorial Team',
+  description: 'Editorial identity for Signal IA.',
+  url: canonicalUrl,
+  inLanguage: 'en-US',
+  mainEntity: {
+    '@type': 'Organization',
+    name: 'Signal IA',
+  },
+};
+---
+
+<BaseLayout title="Author" description="Editorial identity for Signal IA." lang="en" ogLocale="en_US" canonical={canonicalUrl} structuredData={structuredData}>
+  <article class="article-shell">
+    <div class="kicker">Author</div>
+    <h1>Signal IA Editorial Team</h1>
+    <p>
+      Signal IA publishes under a publication-level editorial identity rather than a personality-led author brand.
+    </p>
+    <p>
+      The goal is simple: keep the focus on usefulness, evidence, and judgment instead of turning the site into a biography page with AI attached.
+    </p>
+    <p>
+      If individual bylines, contributors, or specialist reviewers are added later, this page can evolve. For now, the accountable publishing entity is Signal IA.
+    </p>
+    <p class="meta">
+      Read <a href={`${baseUrl}about/`}>About</a> and <a href={`${baseUrl}editorial-policy/`}>Editorial Policy</a> for the operating context.
+    </p>
+  </article>
+</BaseLayout>

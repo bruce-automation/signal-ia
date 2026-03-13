@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { organizationName } from '../data/site';
+
+const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
+const baseUrl = basePath ? `/${basePath}/` : '/';
+const email = 'bruce.automation@proton.me';
+const canonicalUrl = new URL(`${baseUrl}contact/`, Astro.site).toString();
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: `Contact ${organizationName}`,
+  description: 'How to contact Signal IA for corrections, feedback, or editorial questions.',
+  url: canonicalUrl,
+  inLanguage: 'en-US',
+};
+---
+
+<BaseLayout title="Contact" description="Contact Signal IA for feedback, corrections, or editorial questions." lang="en" ogLocale="en_US" canonical={canonicalUrl} structuredData={structuredData}>
+  <article class="article-shell">
+    <div class="kicker">Contact</div>
+    <h1>Get in touch</h1>
+    <p>
+      Signal IA can be reached for editorial feedback, factual corrections, partnership questions, or useful tips that deserve review.
+    </p>
+
+    <h2>Email</h2>
+    <p>
+      <a href={`mailto:${email}`}>{email}</a>
+    </p>
+
+    <h2>Best reasons to write</h2>
+    <ul>
+      <li>you found a factual error or outdated detail</li>
+      <li>you want to suggest a tool, workflow, or topic worth testing</li>
+      <li>you have a credible partnership request</li>
+      <li>you want to point to a better source or a missing angle</li>
+    </ul>
+
+    <h2>What helps</h2>
+    <p>
+      If your message concerns a specific article, include the article URL and the exact issue. That makes review faster and cleaner.
+    </p>
+
+    <p class="meta">
+      For background on the publication, read <a href={`${baseUrl}about/`}>About</a>. For standards and update policy, read
+      <a href={`${baseUrl}editorial-policy/`}>Editorial Policy</a>.
+    </p>
+  </article>
+</BaseLayout>

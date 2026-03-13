@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { organizationName, siteDescription, siteTagline } from '../data/site';
+
+const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
+const baseUrl = basePath ? `/${basePath}/` : '/';
+const canonicalUrl = new URL(`${baseUrl}about/`, Astro.site).toString();
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: `About ${organizationName}`,
+  description: siteTagline,
+  url: canonicalUrl,
+  inLanguage: 'en-US',
+  mainEntity: {
+    '@type': 'Organization',
+    name: organizationName,
+    description: siteDescription,
+    url: new URL(baseUrl, Astro.site).toString(),
+  },
+};
+---
+
+<BaseLayout title="About" description="What Signal IA is, how it thinks, and why it exists." lang="en" ogLocale="en_US" canonical={canonicalUrl} structuredData={structuredData}>
+  <article class="article-shell">
+    <div class="kicker">About</div>
+    <h1>Signal IA exists to filter noise, not add to it.</h1>
+    <p>
+      Signal IA is an independent English-language AI publication focused on one job: helping readers understand what actually matters,
+      choose better tools, and avoid AI theatre.
+    </p>
+    <p>
+      The site covers AI models, tools, agents, workflow design, and the business layer around AI. The editorial angle is simple: less hype,
+      more judgment. Less launch-day excitement, more operational usefulness.
+    </p>
+
+    <h2>What we publish</h2>
+    <p>Signal IA mainly publishes:</p>
+    <ul>
+      <li>comparisons that help readers choose between tools and models</li>
+      <li>guides that show how to use AI at work without creating more chaos</li>
+      <li>business analysis about what creates value, what is overpriced, and what is mostly theatre</li>
+      <li>topic hubs that connect the strongest coverage around a real search intent</li>
+    </ul>
+
+    <h2>Who it is for</h2>
+    <p>
+      The site is built for operators, founders, independents, and teams who want AI to be useful in practice. It is not built for people who
+      want maximum novelty per minute.
+    </p>
+
+    <h2>What we optimise for</h2>
+    <ul>
+      <li>clarity over volume</li>
+      <li>judgment over recycled summaries</li>
+      <li>usefulness over trend-chasing</li>
+      <li>small, defensible claims over inflated certainty</li>
+      <li>systems that can be reviewed, not black-box storytelling</li>
+    </ul>
+
+    <h2>What Signal IA is not</h2>
+    <p>
+      Signal IA is not a vendor mouthpiece, a press-release mirror, or a generic content farm built to flood AI keywords. If a topic is loud but
+      not useful, it does not deserve much space here.
+    </p>
+
+    <p class="meta">
+      For methodology and publishing standards, read the <a href={`${baseUrl}editorial-policy/`}>Editorial Policy</a>. For questions or
+      corrections, use the <a href={`${baseUrl}contact/`}>Contact page</a>.
+    </p>
+  </article>
+</BaseLayout>

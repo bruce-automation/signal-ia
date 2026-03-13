@@ -81,6 +81,8 @@ const structuredDataItems = Array.isArray(structuredData)
           <a href={`${baseUrl}articles/`}>Articles</a>
           <a href={`${baseUrl}categories/`}>Categories</a>
           <a href={`${baseUrl}dossiers/`}>Guides</a>
+          <a href={`${baseUrl}about/`}>About</a>
+          <a href={`${baseUrl}contact/`}>Contact</a>
           <a href={`${baseUrl}rss.xml`}>RSS</a>
         </nav>
       </div>
@@ -89,8 +91,14 @@ const structuredDataItems = Array.isArray(structuredData)
       <slot />
     </main>
     <footer class="site-footer">
-      <div class="container footer-inner">
+      <div class="container footer-inner footer-stack">
         <p>{siteDescription}</p>
+        <nav class="nav footer-nav" aria-label="Footer">
+          <a href={`${baseUrl}about/`}>About</a>
+          <a href={`${baseUrl}editorial-policy/`}>Editorial Policy</a>
+          <a href={`${baseUrl}author/`}>Author</a>
+          <a href={`${baseUrl}contact/`}>Contact</a>
+        </nav>
       </div>
     </footer>
   </body>

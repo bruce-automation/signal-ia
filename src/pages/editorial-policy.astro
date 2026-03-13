@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { organizationName } from '../data/site';
+
+const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
+const baseUrl = basePath ? `/${basePath}/` : '/';
+const canonicalUrl = new URL(`${baseUrl}editorial-policy/`, Astro.site).toString();
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: `${organizationName} Editorial Policy`,
+  description: 'How Signal IA researches, writes, updates, and reviews its coverage.',
+  url: canonicalUrl,
+  inLanguage: 'en-US',
+};
+---
+
+<BaseLayout title="Editorial Policy" description="How Signal IA researches, writes, reviews, and updates its coverage." lang="en" ogLocale="en_US" canonical={canonicalUrl} structuredData={structuredData}>
+  <article class="article-shell">
+    <div class="kicker">Editorial policy</div>
+    <h1>How Signal IA publishes</h1>
+    <p>
+      Signal IA aims to be useful, readable, and accountable. This page explains how content is produced and what standards shape the site.
+    </p>
+
+    <h2>1. Editorial principle</h2>
+    <p>
+      The guiding rule is simple: publish content that helps readers make better decisions about AI. That means prioritising clarity, practical
+      judgment, and traceable claims over novelty or hype.
+    </p>
+
+    <h2>2. Content types</h2>
+    <ul>
+      <li><strong>Comparisons:</strong> articles designed to help readers choose between models, tools, or categories of products.</li>
+      <li><strong>Guides:</strong> practical pieces about using AI in work, operations, and decision-making.</li>
+      <li><strong>Business analysis:</strong> coverage of AI strategy, execution, incentives, and credibility.</li>
+      <li><strong>Tool roundups:</strong> curated views of tools by use case, not by hype cycle.</li>
+    </ul>
+
+    <h2>3. Research and evaluation</h2>
+    <p>Signal IA uses a mix of direct product understanding, workflow analysis, public information, and editorial synthesis. Evaluation criteria typically include:</p>
+    <ul>
+      <li>output quality</li>
+      <li>workflow fit</li>
+      <li>speed and friction</li>
+      <li>governance and reviewability</li>
+      <li>cost relative to observed value</li>
+    </ul>
+
+    <h2>4. Use of AI in production</h2>
+    <p>
+      AI may be used to support ideation, structuring, editing, and drafting. It is not treated as a substitute for editorial judgment. Final responsibility for what is published stays with Signal IA.
+    </p>
+
+    <h2>5. Independence and incentives</h2>
+    <p>
+      Signal IA is written to help readers, not to maximise vendor friendliness. If partnerships, sponsorships, or affiliate relationships are added later, they should be disclosed clearly where relevant.
+    </p>
+
+    <h2>6. Corrections and updates</h2>
+    <p>
+      AI changes quickly. Articles may be updated when tools, pricing, availability, or the practical verdict change. If you spot a factual issue or a broken link, use the <a href={`${baseUrl}contact/`}>Contact page</a>.
+    </p>
+
+    <h2>7. What we avoid</h2>
+    <ul>
+      <li>publishing unearned certainty</li>
+      <li>recycling vendor marketing as analysis</li>
+      <li>padding articles just to chase keyword volume</li>
+      <li>pretending AI-generated copy is inherently trustworthy because it sounds fluent</li>
+    </ul>
+  </article>
+</BaseLayout>

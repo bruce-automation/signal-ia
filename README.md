@@ -11,6 +11,8 @@ Site de contenu minimal sous Astro pour le projet `ai-blog`.
 - metadata SEO de base (`title`, `description`, canonical, Open Graph simple)
 - sitemap + RSS
 - structure légère et maintenable
+- pages de crédibilité : About, Editorial Policy, Contact, Author
+- système compact de revue hebdomadaire SEO / trafic dans `reviews/weekly/`
 
 ## Stack
 - Astro
