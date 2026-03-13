@@ -1,10 +1,9 @@
 import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
+import { getArticles, getArticleUrl } from '../data/articles';
 import { siteDescription, siteName } from '../data/site';
-import { getArticleUrl } from '../data/articles';
 
 export async function GET(context) {
-  const articles = (await getCollection('articles')).sort(
+  const articles = (await getArticles()).sort(
     (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
   );
   const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
