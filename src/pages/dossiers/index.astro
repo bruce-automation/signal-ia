@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { pillarPages } from '../../data/seo';
+
+const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
+const baseUrl = basePath ? `/${basePath}/` : '/';
 ---
 
 <BaseLayout
@@ -18,7 +21,7 @@ import { pillarPages } from '../../data/seo';
       {pillarPages.map((page) => (
         <article class="card">
           <div class="kicker">pillar page</div>
-          <h3><a href={`/dossiers/${page.slug}/`}>{page.title}</a></h3>
+          <h3><a href={`${baseUrl}dossiers/${page.slug}/`}>{page.title}</a></h3>
           <p>{page.description}</p>
         </article>
       ))}

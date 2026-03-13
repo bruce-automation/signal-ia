@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { categoryMeta } from '../../data/seo';
+
+const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
+const baseUrl = basePath ? `/${basePath}/` : '/';
 ---
 
 <BaseLayout
@@ -18,7 +21,7 @@ import { categoryMeta } from '../../data/seo';
       {Object.entries(categoryMeta).map(([slug, meta]) => (
         <article class="card">
           <div class="kicker">{slug}</div>
-          <h3><a href={`/categories/${slug}/`}>{meta.title}</a></h3>
+          <h3><a href={`${baseUrl}categories/${slug}/`}>{meta.title}</a></h3>
           <p>{meta.description}</p>
         </article>
       ))}

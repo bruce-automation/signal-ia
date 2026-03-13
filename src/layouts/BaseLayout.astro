@@ -1,16 +1,40 @@
 ---
 import '../styles/global.css';
+import { siteDescription, siteName, socialImage } from '../data/site';
 
 interface Props {
   title: string;
   description: string;
   canonical?: string;
+  type?: 'website' | 'article';
+  image?: string;
+  noTitleSuffix?: boolean;
+  structuredData?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
-const { title, description, canonical } = Astro.props;
-const pageTitle = `${title} | Signal IA`;
+const {
+  title,
+  description,
+  canonical,
+  type = 'website',
+  image = socialImage,
+  noTitleSuffix = false,
+  structuredData,
+} = Astro.props;
+
+const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
+const baseUrl = basePath ? `/${basePath}/` : '/';
+const pageTitle = noTitleSuffix ? title : `${title} | ${siteName}`;
+const siteRoot = new URL(baseUrl, Astro.site);
 const url = new URL(Astro.url.pathname, Astro.site);
 const canonicalUrl = canonical ?? url.toString();
+const imageUrl = new URL(image.replace(/^\//, ''), siteRoot).toString();
+const sitemapUrl = new URL(`${basePath ? `${basePath}/` : ''}sitemap-index.xml`, Astro.site).toString();
+const structuredDataItems = Array.isArray(structuredData)
+  ? structuredData
+  : structuredData
+    ? [structuredData]
+    : [];
 ---
 
 <!doctype html>
@@ -21,16 +45,25 @@ const canonicalUrl = canonical ?? url.toString();
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
+    <link rel="sitemap" href={sitemapUrl} />
     <meta name="generator" content={Astro.generator} />
-    <meta name="robots" content="index,follow" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Signal IA" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="theme-color" content="#0b1020" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={siteDescription} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+    {structuredDataItems.map((item) => (
+      <script type="application/ld+json" set:html={JSON.stringify(item)} />
+    ))}
     <script
       data-goatcounter="https://signal-ia-bruce.goatcounter.com/count"
       async
@@ -39,12 +72,12 @@ const canonicalUrl = canonical ?? url.toString();
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="/" class="brand">Signal IA</a>
+        <a href={baseUrl} class="brand">{siteName}</a>
         <nav class="nav">
-          <a href="/articles">Articles</a>
-          <a href="/categories">Catégories</a>
-          <a href="/dossiers">Dossiers</a>
-          <a href="/rss.xml">RSS</a>
+          <a href={`${baseUrl}articles/`}>Articles</a>
+          <a href={`${baseUrl}categories/`}>Catégories</a>
+          <a href={`${baseUrl}dossiers/`}>Dossiers</a>
+          <a href={`${baseUrl}rss.xml`}>RSS</a>
         </nav>
       </div>
     </header>
@@ -53,7 +86,7 @@ const canonicalUrl = canonical ?? url.toString();
     </main>
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>Le média francophone qui filtre le bruit de l’IA.</p>
+        <p>{siteDescription}</p>
       </div>
     </footer>
   </body>

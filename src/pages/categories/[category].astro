@@ -4,6 +4,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { categoryMeta, type CategorySlug } from '../../data/seo';
 
+const basePath = import.meta.env.BASE_URL.replace(/^\/?|\/?$/g, '');
+const baseUrl = basePath ? `/${basePath}/` : '/';
+
 export async function getStaticPaths() {
   return Object.entries(categoryMeta).map(([category, meta]) => ({
     params: { category },
@@ -22,9 +25,19 @@ const articles = (await getCollection('articles'))
 
 const featured = articles.find((article) => article.data.featured) ?? articles[0];
 const others = featured ? articles.filter((article) => article.id !== featured.id) : articles;
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: meta.title,
+  description: meta.description,
+  url: new URL(Astro.url.pathname, Astro.site).toString(),
+  inLanguage: 'fr-FR',
+  isPartOf: new URL(baseUrl, Astro.site).toString(),
+};
 ---
 
-<BaseLayout title={meta.title} description={meta.description}>
+<BaseLayout title={meta.title} description={meta.description} structuredData={structuredData}>
   <section class="list-page-header">
     <div class="eyebrow">Catégorie</div>
     <h1>{meta.title}</h1>
@@ -42,8 +55,8 @@ const others = featured ? articles.filter((article) => article.id !== featured.i
       <article class="feature-panel">
         <p>{featured.data.description}</p>
         <div class="cta-row">
-          <a class="button primary" href={`/articles/${featured.id}/`}>Lire l’article</a>
-          <a class="button" href="/articles">Voir tous les articles</a>
+          <a class="button primary" href={`${baseUrl}articles/${featured.id}/`}>Lire l’article</a>
+          <a class="button" href={`${baseUrl}articles/`}>Voir tous les articles</a>
         </div>
       </article>
     </section>
