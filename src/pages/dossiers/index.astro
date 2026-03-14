@@ -7,22 +7,22 @@ const baseUrl = basePath ? `/${basePath}/` : '/';
 ---
 
 <BaseLayout
-  title="Guides"
-  description="Signal IA pillar pages that group the strongest content clusters by strategic topic."
+  title="Topics"
+  description="Signal IA topic guides that group the strongest coverage by question and theme."
   lang="en"
   ogLocale="en_US"
 >
   <section class="list-page-header">
-    <div class="eyebrow">Editorial hub</div>
-    <h1>Guides</h1>
-    <p>Topic hubs designed to capture broad search intent and route readers to the right articles.</p>
+    <div class="eyebrow">Topic guides</div>
+    <h1>Topics</h1>
+    <p>Deeper pages that group the most useful Signal IA coverage around one question.</p>
   </section>
 
   <section class="section">
     <div class="grid cards">
       {pillarPages.map((page) => (
         <article class="card">
-          <div class="kicker">pillar page</div>
+          <div class="kicker">topic guide</div>
           <h3><a href={`${baseUrl}dossiers/${page.slug}/`}>{page.title}</a></h3>
           <p>{page.description}</p>
         </article>

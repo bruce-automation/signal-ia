@@ -109,6 +109,6 @@ Yes for light, occasional, or exploratory tasks. Not reliably for serious long-t
 Not at the start. But once AI becomes central to your work, paying is usually cheaper than fighting the limits of free plans.
 
 ## Related reading
-- `../chatgpt-vs-claude-vs-gemini-2026/`
-- `../best-ai-tools-for-content-creation/`
-- `../how-to-use-ai-at-work-without-wasting-time/`
+- [Chatgpt vs Claude vs Gemini 2026](../chatgpt-vs-claude-vs-gemini-2026/)
+- [Best AI Tools for Content Creation](../best-ai-tools-for-content-creation/)
+- [How to Use AI at Work without Wasting Time](../how-to-use-ai-at-work-without-wasting-time/)

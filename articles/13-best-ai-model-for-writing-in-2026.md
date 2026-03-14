@@ -212,7 +212,7 @@ Usually the best option is the one that can create a strong structure, stay cohe
 Yes for drafting and editing support. No for blind publishing. Human judgment still matters for truth, tone, selection, and final quality.
 
 ## Related reading
-- `../chatgpt-vs-claude-vs-gemini-2026/`
-- `../best-ai-tools-for-entrepreneurs/`
-- `../best-ai-tools-for-automating-work/`
-- `../how-to-use-ai-at-work-without-wasting-time/`
+- [Chatgpt vs Claude vs Gemini 2026](../chatgpt-vs-claude-vs-gemini-2026/)
+- [Best AI Tools for Entrepreneurs](../best-ai-tools-for-entrepreneurs/)
+- [Best AI Tools for Automating Work](../best-ai-tools-for-automating-work/)
+- [How to Use AI at Work without Wasting Time](../how-to-use-ai-at-work-without-wasting-time/)

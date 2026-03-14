@@ -31,7 +31,20 @@ const baseUrl = basePath ? `/${basePath}/` : '/';
 const pageTitle = noTitleSuffix ? title : `${title} | ${siteName}`;
 const siteRoot = new URL(baseUrl, Astro.site);
 const url = new URL(Astro.url.pathname, Astro.site);
-const canonicalUrl = canonical ?? url.toString();
+
+function normalizeCanonical(input: string) {
+  const parsed = new URL(input);
+  const pathname = parsed.pathname;
+  const looksLikeFile = /\.[a-z0-9]+$/i.test(pathname);
+
+  if (!looksLikeFile && !pathname.endsWith('/')) {
+    parsed.pathname = `${pathname}/`;
+  }
+
+  return parsed.toString();
+}
+
+const canonicalUrl = normalizeCanonical(canonical ?? url.toString());
 const imageUrl = new URL(image.replace(/^\//, ''), siteRoot).toString();
 const sitemapUrl = new URL(`${basePath ? `${basePath}/` : ''}sitemap-index.xml`, Astro.site).toString();
 const structuredDataItems = Array.isArray(structuredData)
@@ -80,7 +93,7 @@ const structuredDataItems = Array.isArray(structuredData)
         <nav class="nav">
           <a href={`${baseUrl}articles/`}>Articles</a>
           <a href={`${baseUrl}categories/`}>Categories</a>
-          <a href={`${baseUrl}dossiers/`}>Guides</a>
+          <a href={`${baseUrl}dossiers/`}>Topics</a>
           <a href={`${baseUrl}about/`}>About</a>
           <a href={`${baseUrl}contact/`}>Contact</a>
           <a href={`${baseUrl}rss.xml`}>RSS</a>

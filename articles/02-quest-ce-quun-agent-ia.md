@@ -121,6 +121,6 @@ Sometimes, but useful autonomy is always limited by rules, permissions, and revi
 Not cleanly. They mostly replace friction, preparation, triage, and part of repetitive knowledge work.
 
 ## Related reading
-- `../best-ai-agent-tools-in-2026/`
-- `../shadow-ai-agents-the-real-enterprise-risk/`
-- `../how-to-use-ai-at-work-without-wasting-time/`
+- [Best AI Agent Tools in 2026](../best-ai-agent-tools-in-2026/)
+- [Shadow AI Agents the Real Enterprise Risk](../shadow-ai-agents-the-real-enterprise-risk/)
+- [How to Use AI at Work without Wasting Time](../how-to-use-ai-at-work-without-wasting-time/)

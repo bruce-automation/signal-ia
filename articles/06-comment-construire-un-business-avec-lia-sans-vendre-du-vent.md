@@ -103,6 +103,6 @@ Usually not. Starting with a productised service is often the smarter move.
 Sell a concrete result, define the method, show proof, and stay honest about the limits.
 
 ## Related reading
-- `../dossiers/how-to-build-a-credible-ai-business/`
-- `../why-90-percent-of-ai-projects-are-theatre/`
-- `../what-is-an-ai-agent/`
+- [How to Build a Credible AI Business](../dossiers/how-to-build-a-credible-ai-business/)
+- [Why 90 Percent of AI Projects Are Theatre](../why-90-percent-of-ai-projects-are-theatre/)
+- [What Is an AI Agent](../what-is-an-ai-agent/)

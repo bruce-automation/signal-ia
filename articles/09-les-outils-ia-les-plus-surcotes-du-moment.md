@@ -135,6 +135,6 @@ It should improve a real workflow with a visible gain, not just generate a seduc
 No. Just separate tools that are popular because they are useful from tools that are popular because they tell a better story.
 
 ## Related reading
-- `../why-90-percent-of-ai-projects-are-theatre/`
-- `../best-ai-tools-for-content-creation/`
-- `../best-ai-agent-tools-in-2026/`
+- [Why 90 Percent of AI Projects Are Theatre](../why-90-percent-of-ai-projects-are-theatre/)
+- [Best AI Tools for Content Creation](../best-ai-tools-for-content-creation/)
+- [Best AI Agent Tools in 2026](../best-ai-agent-tools-in-2026/)

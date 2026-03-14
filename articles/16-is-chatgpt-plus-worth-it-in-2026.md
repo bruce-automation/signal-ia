@@ -235,8 +235,8 @@ People who use ChatGPT regularly for writing, research, planning, coding help, o
 For many casual users, yes. For heavier workflows, the free tier is often enough to test, but not always enough to support steady professional use.
 
 ## Related reading
-- `../chatgpt-vs-claude-vs-gemini-2026/`
-- `../best-ai-model-for-writing-in-2026/`
-- `../best-ai-models-for-coding-in-2026/`
-- `../best-free-ai-tools/`
-- `../best-ai-tools-for-automating-work/`
+- [Chatgpt vs Claude vs Gemini 2026](../chatgpt-vs-claude-vs-gemini-2026/)
+- [Best AI Model for Writing in 2026](../best-ai-model-for-writing-in-2026/)
+- [Best AI Models for Coding in 2026](../best-ai-models-for-coding-in-2026/)
+- [Best Free AI Tools](../best-free-ai-tools/)
+- [Best AI Tools for Automating Work](../best-ai-tools-for-automating-work/)

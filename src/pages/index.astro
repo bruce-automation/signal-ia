@@ -94,10 +94,10 @@ const structuredData = {
   <section class="section">
     <div class="section-head">
       <div>
-        <div class="eyebrow">SEO navigation</div>
-        <h2>Clean entry points by topic and intent</h2>
+        <div class="eyebrow">Explore by topic</div>
+        <h2>Start from the angle that fits your question</h2>
       </div>
-      <p>A lightweight layer that routes readers toward the right content cluster.</p>
+      <p>Browse by category or go straight to a deeper topic page.</p>
     </div>
     <div class="tag-row">
       {Object.entries(categoryMeta).map(([slug, meta]) => (
@@ -107,7 +107,7 @@ const structuredData = {
     <div class="grid cards">
       {pillarPages.map((page) => (
         <article class="card">
-          <div class="kicker">pillar page</div>
+          <div class="kicker">topic guide</div>
           <h3><a href={`${baseUrl}dossiers/${page.slug}/`}>{page.title}</a></h3>
           <p>{page.description}</p>
         </article>

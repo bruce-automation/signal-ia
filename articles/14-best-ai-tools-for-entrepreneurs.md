@@ -207,7 +207,7 @@ Usually one core assistant, then one specialised tool for meetings, research, or
 No. Automate only repeated, low-drama workflows that are easy to verify. Otherwise you risk scaling confusion.
 
 ## Related reading
-- `../best-ai-model-for-writing-in-2026/`
-- `../best-ai-tools-for-automating-work/`
-- `../how-to-build-a-credible-ai-business/`
-- `../how-to-choose-the-right-ai-tools/`
+- [Best AI Model for Writing in 2026](../best-ai-model-for-writing-in-2026/)
+- [Best AI Tools for Automating Work](../best-ai-tools-for-automating-work/)
+- [How to Build a Credible AI Business](../how-to-build-a-credible-ai-business/)
+- [How to Choose the Right AI Tools](../how-to-choose-the-right-ai-tools/)

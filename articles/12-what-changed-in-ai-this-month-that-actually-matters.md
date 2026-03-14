@@ -172,6 +172,6 @@ Businesses should focus on updates that change tool choice, deployment risk, eco
 Usually no. Most months do not justify a stack change. Update only when the gain is concrete and observable.
 
 ## Related reading
-- `../chatgpt-vs-claude-vs-gemini-2026/`
-- `../why-90-percent-of-ai-projects-are-theatre/`
-- `../how-to-use-ai-at-work-without-wasting-time/`
+- [Chatgpt vs Claude vs Gemini 2026](../chatgpt-vs-claude-vs-gemini-2026/)
+- [Why 90 Percent of AI Projects Are Theatre](../why-90-percent-of-ai-projects-are-theatre/)
+- [How to Use AI at Work without Wasting Time](../how-to-use-ai-at-work-without-wasting-time/)

@@ -4,7 +4,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
   getArticleLanguage,
   getArticleOgLocale,
-  getArticleRouteSlugs,
   getArticleSchemaLanguage,
   getArticleSlug,
   getArticles,
@@ -17,21 +16,13 @@ const baseUrl = basePath ? `/${basePath}/` : '/';
 export async function getStaticPaths() {
   const articles = await getArticles();
 
-  return articles.flatMap((article) => {
-    const canonicalSlug = getArticleSlug(article);
-
-    return getArticleRouteSlugs(article).map((slug) => ({
-      params: { slug },
-      props: {
-        article,
-        requestedSlug: slug,
-        isCanonical: slug === canonicalSlug,
-      },
-    }));
-  });
+  return articles.map((article) => ({
+    params: { slug: getArticleSlug(article) },
+    props: { article },
+  }));
 }
 
-const { article, requestedSlug, isCanonical } = Astro.props;
+const { article } = Astro.props;
 const { Content } = await render(article);
 const canonicalPath = `${baseUrl}articles/${getArticleSlug(article)}/`;
 const canonicalUrl = new URL(canonicalPath, Astro.site).toString();
@@ -81,14 +72,6 @@ const articleData = {
     name: 'Signal IA',
   },
 };
-const legacyStructuredData = !isCanonical
-  ? {
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      url: new URL(`${baseUrl}articles/${requestedSlug}/`, Astro.site).toString(),
-      isPartOf: canonicalUrl,
-    }
-  : undefined;
 ---
 
 <BaseLayout
@@ -98,18 +81,9 @@ const legacyStructuredData = !isCanonical
   lang={articleLanguage}
   ogLocale={getArticleOgLocale(article)}
   canonical={canonicalUrl}
-  structuredData={legacyStructuredData ? [breadcrumbData, articleData, legacyStructuredData] : [breadcrumbData, articleData]}
+  structuredData={[breadcrumbData, articleData]}
 >
-  {!isCanonical && (
-    <meta http-equiv="refresh" content={`0;url=${canonicalPath}`} />
-  )}
-
   <article class="article-shell">
-    {!isCanonical && (
-      <p class="meta">
-        This article moved to <a href={canonicalPath}>{canonicalPath}</a>.
-      </p>
-    )}
     <nav class="meta" aria-label="Breadcrumb">
       <a href={`${baseUrl}articles/`}>Articles</a> · <a href={`${baseUrl}categories/${article.data.category}/`}>{categoryLabel}</a>
     </nav>

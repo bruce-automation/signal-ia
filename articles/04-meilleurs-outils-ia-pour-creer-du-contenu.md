@@ -117,6 +117,6 @@ Not cleanly. It can accelerate parts of the workflow, but final quality still de
 Only if it genuinely reduces friction. In many cases, a smaller stack works better.
 
 ## Related reading
-- `../best-free-ai-tools/`
-- `../how-to-use-ai-at-work-without-wasting-time/`
-- `../chatgpt-vs-claude-vs-gemini-2026/`
+- [Best Free AI Tools](../best-free-ai-tools/)
+- [How to Use AI at Work without Wasting Time](../how-to-use-ai-at-work-without-wasting-time/)
+- [Chatgpt vs Claude vs Gemini 2026](../chatgpt-vs-claude-vs-gemini-2026/)

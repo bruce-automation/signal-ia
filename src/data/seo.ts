@@ -74,7 +74,7 @@ export const pillarPages: PillarPage[] = [
     title: 'How to Use AI Well at Work',
     description:
       'The Signal IA hub for using AI at work without creating more noise: methods, tools, and non-negotiable guardrails.',
-    eyebrow: 'Pillar page',
+    eyebrow: 'Topic guide',
     intro:
       'If you want AI to remove friction from daily work instead of adding one more shiny layer, start here.',
     body: [
@@ -180,7 +180,7 @@ export const pillarPages: PillarPage[] = [
     title: 'How to Choose the Right AI Tools',
     description:
       'The Signal IA hub for comparing models and AI tools before you pay for storytelling instead of leverage.',
-    eyebrow: 'Pillar page',
+    eyebrow: 'Topic guide',
     intro:
       'A clean starting point for choosing AI tools based on real jobs, not the loudest landing page.',
     body: [
@@ -286,7 +286,7 @@ export const pillarPages: PillarPage[] = [
     title: 'How to Build a Credible AI Business',
     description:
       'The Signal IA hub for avoiding AI theatre and building an offer that is useful, credible, and verifiable.',
-    eyebrow: 'Pillar page',
+    eyebrow: 'Topic guide',
     intro:
       'For operators, founders, and independents who want to build something real with AI instead of selling fog.',
     body: [

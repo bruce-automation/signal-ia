@@ -172,6 +172,6 @@ Usually the better debugging model is the one that reasons carefully, explains c
 Yes for acceleration, drafts, debugging help, and constrained edits. No for blind trust. Review, tests, and code ownership still matter.
 
 ## Related reading
-- `../chatgpt-vs-claude-vs-gemini-2026/`
-- `../best-free-ai-tools/`
-- `../how-to-use-ai-at-work-without-wasting-time/`
+- [Chatgpt vs Claude vs Gemini 2026](../chatgpt-vs-claude-vs-gemini-2026/)
+- [Best Free AI Tools](../best-free-ai-tools/)
+- [How to Use AI at Work without Wasting Time](../how-to-use-ai-at-work-without-wasting-time/)

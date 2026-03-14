@@ -8,7 +8,7 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'ProfilePage',
   name: 'Signal IA Editorial Team',
-  description: 'Editorial identity for Signal IA.',
+  description: 'The editorial team behind Signal IA.',
   url: canonicalUrl,
   inLanguage: 'en-US',
   mainEntity: {
@@ -18,21 +18,21 @@ const structuredData = {
 };
 ---
 
-<BaseLayout title="Author" description="Editorial identity for Signal IA." lang="en" ogLocale="en_US" canonical={canonicalUrl} structuredData={structuredData}>
+<BaseLayout title="Author" description="The editorial team behind Signal IA." lang="en" ogLocale="en_US" canonical={canonicalUrl} structuredData={structuredData}>
   <article class="article-shell">
     <div class="kicker">Author</div>
     <h1>Signal IA Editorial Team</h1>
     <p>
-      Signal IA publishes under a publication-level editorial identity rather than a personality-led author brand.
+      Signal IA is published by a small editorial team focused on one job: helping readers understand what matters in AI without recycling launch-day hype.
     </p>
     <p>
-      The goal is simple: keep the focus on usefulness, evidence, and judgment instead of turning the site into a biography page with AI attached.
+      The publication favours practical comparisons, clear judgment, and concise explanations over personality-led commentary. Articles are written and reviewed with the same standard in mind: be useful, be readable, and do not pretend uncertainty is clarity.
     </p>
     <p>
-      If individual bylines, contributors, or specialist reviewers are added later, this page can evolve. For now, the accountable publishing entity is Signal IA.
+      Accountability sits with Signal IA as the publishing team. When an article needs a correction or update, the publication is responsible for making that change visible and keeping the work credible over time.
     </p>
     <p class="meta">
-      Read <a href={`${baseUrl}about/`}>About</a> and <a href={`${baseUrl}editorial-policy/`}>Editorial Policy</a> for the operating context.
+      Read <a href={`${baseUrl}about/`}>About</a> and <a href={`${baseUrl}editorial-policy/`}>Editorial Policy</a> to understand how the publication works.
     </p>
   </article>
 </BaseLayout>

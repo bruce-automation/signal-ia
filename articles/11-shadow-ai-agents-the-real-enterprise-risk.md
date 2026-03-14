@@ -192,6 +192,6 @@ Because they can combine data access, tool permissions, and automation in ways t
 Blanket bans are rarely effective. The smarter move is to map what exists, classify risk, define allowed patterns, and provide sanctioned alternatives.
 
 ## Related reading
-- `../what-is-an-ai-agent/`
-- `../best-ai-agent-tools-in-2026/`
-- `../why-90-percent-of-ai-projects-are-theatre/`
+- [What Is an AI Agent](../what-is-an-ai-agent/)
+- [Best AI Agent Tools in 2026](../best-ai-agent-tools-in-2026/)
+- [Why 90 Percent of AI Projects Are Theatre](../why-90-percent-of-ai-projects-are-theatre/)

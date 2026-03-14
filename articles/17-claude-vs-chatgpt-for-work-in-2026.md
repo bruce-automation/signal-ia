@@ -220,7 +220,7 @@ Professionals should choose by workload. Writing-heavy and analysis-heavy work o
 Claude often has the edge for cleaner structure and editorial feel. ChatGPT often wins if the writing work sits inside a broader all-purpose workflow.
 
 ## Related reading
-- `../chatgpt-vs-claude-vs-gemini-2026/`
-- `../is-chatgpt-plus-worth-it-in-2026/`
-- `../best-ai-model-for-writing-in-2026/`
-- `../how-to-use-ai-at-work-without-wasting-time/`
+- [Chatgpt vs Claude vs Gemini 2026](../chatgpt-vs-claude-vs-gemini-2026/)
+- [Is Chatgpt Plus Worth It in 2026](../is-chatgpt-plus-worth-it-in-2026/)
+- [Best AI Model for Writing in 2026](../best-ai-model-for-writing-in-2026/)
+- [How to Use AI at Work without Wasting Time](../how-to-use-ai-at-work-without-wasting-time/)

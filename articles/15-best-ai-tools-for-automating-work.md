@@ -188,7 +188,7 @@ Start with repeated internal tasks like summaries, classification, triage, draft
 Usually not at first. Human review should stay close until the workflow is stable, measurable, and easy to audit.
 
 ## Related reading
-- `../best-ai-tools-for-entrepreneurs/`
-- `../how-to-use-ai-at-work-without-wasting-time/`
-- `../shadow-ai-agents-the-real-enterprise-risk/`
-- `../../dossiers/how-to-use-ai-well-at-work/`
+- [Best AI Tools for Entrepreneurs](../best-ai-tools-for-entrepreneurs/)
+- [How to Use AI at Work without Wasting Time](../how-to-use-ai-at-work-without-wasting-time/)
+- [Shadow AI Agents the Real Enterprise Risk](../shadow-ai-agents-the-real-enterprise-risk/)
+- [How to Use AI Well at Work](../../dossiers/how-to-use-ai-well-at-work/)
