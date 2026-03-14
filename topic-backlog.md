@@ -8,7 +8,7 @@
 5. Quels modèles IA valent vraiment le prix ?
 6. ✅ Faut-il payer ChatGPT Plus en 2026 ?
 7. ✅ Claude vaut-il mieux que ChatGPT pour le travail ?
-8. Gemini est-il enfin au niveau de ChatGPT ?
+8. ✅ Gemini est-il enfin au niveau de ChatGPT ?
 
 ## Cluster 2 — Agents IA
 9. Qu’est-ce qu’un agent IA et à quoi ça sert vraiment ?
