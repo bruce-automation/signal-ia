@@ -6,7 +6,7 @@
 3. Quel est le meilleur modèle IA pour écrire ?
 4. ✅ Quel est le meilleur modèle IA pour coder ?
 5. Quels modèles IA valent vraiment le prix ?
-6. Faut-il payer ChatGPT Plus en 2026 ?
+6. ✅ Faut-il payer ChatGPT Plus en 2026 ?
 7. Claude vaut-il mieux que ChatGPT pour le travail ?
 8. Gemini est-il enfin au niveau de ChatGPT ?
 
