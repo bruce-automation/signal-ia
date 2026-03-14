@@ -15,12 +15,14 @@
 
 ## Ce qui manque
 - montée en puissance vers 18 à 20 articles pour asseoir les clusters SEO
-- branchement d’un suivi SEO/traffic externe
+- validation finale de la propriété Google Search Console
 - workflow de mise à jour des contenus
 
 ## Recommandation
-Le prochain bloc utile est Search Console, puis un article comparatif sur `Gemini vs ChatGPT` ou une page transactionnelle sur les modèles qui valent vraiment le prix.
+Les prérequis techniques Search Console sont en place sur GitHub Pages (URL cible, sitemap, fichier de vérification accessible). Le prochain bloc utile est la validation finale de la propriété dans Google Search Console, puis un article comparatif sur `Gemini vs ChatGPT` ou une page transactionnelle sur les modèles qui valent vraiment le prix.
 
 ## Prochaine action claire
-1. brancher Google Search Console
-2. produire `Gemini vs ChatGPT` ou `Which AI models are actually worth paying for?`
+1. dans Google Search Console, ajouter la propriété `https://bruce-automation.github.io/signal-ia/`
+2. vérifier que le fichier HTML est accepté
+3. soumettre `https://bruce-automation.github.io/signal-ia/sitemap-index.xml`
+4. produire `Gemini vs ChatGPT` ou `Which AI models are actually worth paying for?`
