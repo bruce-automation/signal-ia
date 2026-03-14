@@ -4,3 +4,5 @@ export const siteTagline = 'The AI publication that filters the noise and shows 
 export const socialImage = '/og/signal-ia-cover.svg';
 export const organizationName = 'Signal IA';
 export const organizationType = 'Organization';
+export const editorialEmail = 'bruce.automation@proton.me';
+export const subscribeMailto = `mailto:${editorialEmail}?subject=${encodeURIComponent('Subscribe to Signal IA')}&body=${encodeURIComponent('Please subscribe me to the Signal IA brief.')}`;

@@ -207,6 +207,39 @@ h3 {
   max-width: 900px;
 }
 
+.signup-panel {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(138, 180, 255, 0.12) 0%, rgba(255,255,255,0.04) 100%);
+}
+
+.signup-panel h2 {
+  margin: 0.35rem 0 0.5rem;
+}
+
+.signup-panel p {
+  margin: 0;
+  max-width: 60ch;
+}
+
+.signup-panel-inline {
+  margin-top: 2.5rem;
+}
+
+.signup-actions {
+  margin-top: 0;
+  flex-shrink: 0;
+}
+
+.article-signup {
+  margin-top: 2rem;
+}
+
 .stacked-sections {
   display: grid;
   gap: 1rem;
@@ -240,12 +273,17 @@ h3 {
 @media (max-width: 720px) {
   .header-inner,
   .footer-inner,
-  .section-head {
+  .section-head,
+  .signup-panel {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .article-shell {
     padding: 1.25rem;
+  }
+
+  .signup-actions {
+    margin-top: 1rem;
   }
 }

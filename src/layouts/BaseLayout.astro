@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { siteDescription, siteName, socialImage } from '../data/site';
+import { siteDescription, siteName, socialImage, subscribeMailto } from '../data/site';
 
 interface Props {
   title: string;
@@ -105,6 +105,17 @@ const structuredDataItems = Array.isArray(structuredData)
     </main>
     <footer class="site-footer">
       <div class="container footer-inner footer-stack">
+        <section class="signup-panel">
+          <div>
+            <div class="eyebrow">Signal IA brief</div>
+            <h2>Get the useful AI signal, not the noise.</h2>
+            <p>Subscribe to the editorial brief for practical AI analysis, comparisons, and updates worth your time.</p>
+          </div>
+          <div class="cta-row signup-actions">
+            <a class="button primary" href={subscribeMailto}>Subscribe by email</a>
+            <a class="button" href={`${baseUrl}rss.xml`}>Follow by RSS</a>
+          </div>
+        </section>
         <p>{siteDescription}</p>
         <nav class="nav footer-nav" aria-label="Footer">
           <a href={`${baseUrl}about/`}>About</a>

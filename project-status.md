@@ -13,6 +13,7 @@
 - homepage et stack recommandée définies
 - Google Search Console confirmée OK
 - cleanup éditorial/SEO exécuté : suppression des pages legacy générées, sitemap assaini, related reading réparé, wording interne réduit, pages Author/Contact renforcées, nav clarifiée
+- capture email minimale implémentée : CTA email + option RSS sur home, articles et footer
 - build Astro relancé avec succès après cleanup complet
 
 ## Ce qui manque
@@ -21,8 +22,8 @@
 - workflow de mise à jour des contenus
 
 ## Recommandation
-Le cluster modèles est désormais bien armé. Le prochain bloc utile est soit la mise en place de la capture email minimale, soit un comparatif outil à forte intention dans le cluster outils.
+Le cluster modèles est désormais bien armé et la capture minimale est en place. Le prochain bloc utile est un comparatif outil à forte intention dans le cluster outils ou un guide pratique adjacent, puis une première review hebdo avec données réelles.
 
 ## Prochaine action claire
-1. implémenter une capture email simple sur le site
-2. puis produire un comparatif outil à forte intention ou un guide pratique adjacent
+1. produire un comparatif outil à forte intention ou un guide pratique adjacent
+2. lancer la première review hebdo avec Search Console + GoatCounter
